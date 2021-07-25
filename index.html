@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            color:white;
+            z-index: -1;
+        }
+        body{
+            overflow-y: auto;
+            overflow-x: hidden;
+            margin:unset;
+            width: 100vw;
+            background-color: #0F051B;
+            position: relative;
+        }
+        body::before{
+            content:'';
+            background: url(assets/grain_small.png);
+            background-position: top;
+            background-size: 300px 300px;
+            background-repeat: repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+        .above-grain{
+            z-index: 1;
+            position: relative;
+        }
+        .above-grain *{
+            z-index: 1;
+            position: relative;
+        }
+        .wrapper-float{
+            z-index: unset;
+            position: unset;
+        }
+        .container{
+            position: relative;
+            display: block;
+            margin:auto;
+            width:100%;
+            max-width: 1170px;
+            padding:0 21px;
+        }
+
+    </style>
+</head>
+<body>
+    <style>
+        #navbar{
+            border-bottom: 1px solid #8C8691;
+            padding: 32px 0 16px 0;
+        }
+        .nav-wrapper{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .menu-nav-wrapper{
+            margin-left: 77.45px;
+            flex:1;
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 500;
+            display:flex;
+            flex-direction: row;
+        }
+        .menu-nav-wrapper > a{
+            text-decoration: none;
+            margin-right: 32px;
+        }
+        .right-nav-wrapper{
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 500;
+            display:flex;
+            flex-direction: row;
+        }
+        .right-nav-wrapper > div{
+            margin-left: 32px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        #blur-nav{
+            position: absolute;
+            width: 303px;
+            height: 561px;
+            top: -138px;
+            left: -260px;
+            background: #836C78;
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #s-letter{
+            position: absolute;
+            top: 231px;
+            right: -155px;
+        }
+        #line-nav{
+            position: absolute;
+            top: 143px;
+            left: -398px;
+        }
+    </style>
+    <div id="navbar">
+        <div class="container nav-wrapper above-grain">
+            <span class="wrapper-float">
+                <div id="blur-nav"></div>
+                <img id="s-letter" src="assets/floating/S_letter.png"/>
+                <img id="line-nav" src="assets/floating/line_nav.png"/>
+            </span>
+
+            <a href="">
+                <img src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a href="">
+                    Home
+                </a>
+                <a href="">
+                    Exchange
+                </a>
+                <a href="">
+                    Markets
+                </a>
+                <a href="">
+                    Learn
+                </a>
+                <a href="">
+                    Forum
+                </a>
+                <a href="">
+                    Blog
+                </a>
+                <a href="">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #hero > .container:first-child{
+            display: flex;
+            flex-direction: row;
+            padding-top: 98px;
+            margin-bottom: 88px;
+        }
+        #hero > .container:first-child > div{
+            flex:1;
+            position: relative;
+        }
+        #hero > .container:first-child > div:first-child > h1{
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 120%;
+            font-family: 'Sora', sans-serif;
+            color: #F8F7FC;
+            margin:unset;
+            z-index: 1;
+            position: relative;
+        }
+        #hero > .container:first-child > div:first-child > h1 > img{
+            position: relative;
+            top: 8px;
+        }
+        #hero > .container:first-child > div:last-child > h1{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 180%;
+            color: #F8F7FC;
+            margin:unset;
+            width: 85%;
+        }
+        #hero > .container:first-child > div:last-child > a{
+            display: block;
+            margin-top:62px;
+            margin-left: 80px;
+            text-decoration-line: underline;
+            color: #FFF2EE;
+            cursor: pointer;
+            position: relative;
+            width: 110px;
+            text-align: center;
+        }
+
+
+
+        #hero > .container:last-child{
+            display: flex;
+            flex-direction: row;
+        }
+        #hero > .container:last-child > div{
+            width: 50%;
+            position: relative;
+        }
+        #hero > .container:last-child > .hero-img > .hero-img-bg{
+            position: relative;
+            left: -45%;
+            width: 854px;
+            height: 583px;
+        }
+        #hero > .container:last-child > .hero-img > .hero-img-text{
+            position: absolute;
+            width: 1808px;
+            z-index: 2;
+            bottom: 6%;
+            left: -223%;
+        }
+        
+        #hero > .container:last-child > .hero-download{
+            padding-left: 10%;
+        }
+        #hero > .container:last-child > .hero-download > h1{
+            font-family: Sora;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 100%;
+            color: #F8F7FC;
+        }
+        
+        .download-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 56px;
+        }
+        .download-wrapper > .download-item{
+            width: 30%;
+            text-decoration: none;
+            font-family: Sora;
+            font-size: 18px;
+            line-height: 130%;
+            margin-bottom: 48px;
+        }
+        .download-wrapper > .download-item > div{
+            margin-top: 16px;
+        }
+
+        #hero-star{
+            position:absolute;
+            z-index: 0;
+            left: 194px;
+            top: -26px;
+        }
+        #circle-getstart{
+            position:absolute;
+            z-index: 0;
+            top: -44px;
+            left: -53px;
+        }
+    </style>
+    <style>
+        #hero-blur{
+            position: absolute;
+            width: 303.18px;
+            height: 561px;
+            left: 144px;
+            top: 166px;
+            background: rgba(192, 37, 37, 0.28);
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #hero-blur-2{
+            position: absolute;
+            width: 303.18px;
+            height: 561px;
+            left: -88px;
+            top: 238px;
+            background: rgba(115, 37, 192, 0.35);
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #line-hero{
+            position: absolute;
+            top: 259px;
+            left: -117;
+        }
+    </style>
+    <div id="hero">
+        <div class="container above-grain">
+            <div>
+                <img id="hero-star" src="assets/hero_star.svg">
+                <h1>
+                    A robust 
+                    <br>and secure cryptocurrency exchange <img src="assets/hero_head_icon.svg">
+                </h1>
+            </div>
+            <div>
+                <h1>
+                    Your guide to the world of an open to the blockchain. Get started with the easiest and most secure platform to buy and trade cryptocurrency.
+                </h1>
+                <a href="">
+                    <img id="circle-getstart" src="assets/circle_getstart.png">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <div class="container above-grain">
+            <span class="wrapper-float">
+                <div id="hero-blur"></div>
+                <div id="hero-blur-2"></div>
+                <img id="line-hero" src="assets/floating/line_hero.png"/>
+            </span>
+
+            <div class="hero-img">
+                <img class="hero-img-text" src="assets/Cryptocurency.png">
+                <img class="hero-img-bg" src="assets/hero_img.png">
+            </div>
+            <div class="hero-download">
+                <h1>
+                    Download Our App
+                </h1>
+                <div class="download-wrapper">
+                    <a class="download-item" href="">
+                        <img src="assets/app_store.svg">
+                        <div>
+                            App Store
+                        </div>
+                    </a>
+                    <a class="download-item" href="">
+                        <img src="assets/android_apk.svg">
+                        <div>
+                            Android APK
+                        </div>
+                    </a>
+                    <a class="download-item" href="">
+                        <img src="assets/google_play.svg">
+                        <div>
+                            Google Play
+                        </div>
+                    </a>
+                    <a class="download-item" href="">
+                        <img src="assets/macos.svg">
+                        <div>
+                            MacOS
+                        </div>
+                    </a>
+                    <a class="download-item" href="">
+                        <img src="assets/windows.svg">
+                        <div>
+                            Windows
+                        </div>
+                    </a>
+                    <a class="download-item" href="">
+                        <img src="assets/linux.svg">
+                        <div>
+                            Linux
+                        </div>
+                    </a>
+                    <a class="download-item" href="">
+                        <img src="assets/api.svg">
+                        <div>
+                            API
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #market{
+            margin-top:148px;
+        }
+        #market > .container > h1{
+            font-family: Sora;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 130%;
+            color: #F8F7FC;
+            text-align: center;
+            margin: unset;
+        }
+        #market > .container > a{
+            display: block;
+            margin: auto;
+            text-align: center;
+            width: 180px;
+            font-family: 'Sora';
+            font-size: 18px;
+            line-height: 130%;
+            text-decoration-line: underline;
+            margin-top: 40px;
+        }
+        .market-table{
+            width:100%;
+            padding: 70px 48px;
+            background: #1D1428;
+            border-radius: 30px;
+            margin-top: 40px;
+        }
+        .market-table > table{
+            width: 100%;
+        }
+        .table-head > td{
+            font-family: 'Sora';
+            font-size: 18px;
+            line-height: 130%;
+            color: #FFFFFF;
+            padding-bottom: 24px;
+            padding-top: 0;
+        }
+        .table-item > td{
+            font-family: 'Sora', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 100%;
+            color: #F8F7FC;
+            padding-bottom: 24px;
+            padding-top: 0;
+        }
+        .fade-label{
+            color: rgba(248, 247, 252, 0.7) !important;
+        }
+    </style>
+    <style>
+        #market-blur{
+            position: absolute;
+            width: 429.82px;
+            height: 648.17px;
+            background: rgba(166, 0, 193, 0.29);
+            filter: blur(300px);
+            transform: rotate(109.58deg);
+            left: -410px;
+            top: 178px;
+        }
+    </style>
+    <div id="market">
+        <div class="container above-grain">
+            <span class="wrapper-float">
+                <div id="market-blur"></div>
+            </span>
+            <h1>
+                Market Trends
+            </h1>
+            <div class="market-table">
+                <table>
+                    <thead>
+                        <tr class="table-head" height="50px">
+                            <td>
+                                #
+                            </td>
+                            <td colspan="3">
+                                Name
+                            </td>
+                            <td>
+                                Last Price
+                            </td>
+                            <td>
+                                24 Charge
+                            </td>
+                            <td>
+                                Markets Caps
+                            </td>
+                            <td width="18%">
+                                Chart
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <img src="assets/chart_market.png">
+                            </td>
+                        </tr>
+                        <tr class="table-item table-margin-btm">
+                            <td>
+                                2
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <img src="assets/chart_market.png">
+                            </td>
+                        </tr>
+                        <tr class="table-item table-margin-btm">
+                            <td>
+                                3
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <img src="assets/chart_market.png">
+                            </td>
+                        </tr>
+                        <tr class="table-item table-margin-btm">
+                            <td>
+                                4
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <img src="assets/chart_market.png">
+                            </td>
+                        </tr>
+                        <tr class="table-item table-margin-btm">
+                            <td>
+                                5
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <img src="assets/chart_market.png">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="">
+                View more markets
+            </a>
+        </div>
+    </div>
+
+    <style>
+        #top-crypto{
+            margin-top: 148px;
+            margin-bottom: 170px;
+        }
+        #top-crypto > .container{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .top-slider-crypto{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+        .wrapper-main-slider{
+            width:65%;
+        }
+        .active-slider-block{
+            width:35%;
+            padding-left: 30px;
+        }
+
+
+        .slider-crypto {
+            margin: 0 -15px;
+            /* margin-top: -92px; */
+        }
+        .slick-track{
+            display: flex;
+            align-items: flex-end;
+            /* height: 538px; */
+            position: relative;
+            z-index: 1;
+            /* padding: 30px 0px; */
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 36px;
+            flex-direction: row-reverse;
+        }
+        .slick-dots > div{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #342A41;
+            margin-left: 10px;
+        }
+        .slider-item{
+            overflow:hidden;
+            background: #1D1428;
+            border-radius: 30px;
+            padding:60px 30px;
+            margin: 0 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 363px;
+        }
+        .active-slider-block > .active{
+            height: 478px;
+            padding:40px 42px;
+            position: relative;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 29px, #5abedf 29px, #5abedf 32px, transparent 32px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to left, #9db39c, #dda85b), radial-gradient(circle at 100% 0%, transparent 29px, #dda85b 29px, #dda85b 32px, transparent 32px), linear-gradient(to top, #dda85b, #9db39c);
+            background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+        }
+        .active-slider-block > .active::after{
+            content: "";
+            width: 99%;
+            height: 98.8%;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 29px, #5abedf 29px, #5abedf 32px, transparent 32px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to left, #9db39c, #dda85b), radial-gradient(circle at 100% 0%, transparent 29px, #dda85b 29px, #dda85b 32px, transparent 32px), linear-gradient(to top, #dda85b, #9db39c);
+            background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0.5%;
+            left: 0.5%;
+            filter: blur(76px);
+            z-index: -1;
+        }
+
+
+
+        .active-slider-block > .active > h2{
+            margin:unset;
+            margin-bottom: 35px;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 130%;
+            color: #F8F7FC;
+        }
+        .active-slider-block > .active > .item-name{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            color: #F8F7FC;
+
+        }
+        .active-slider-block > .active > .item-name > img{
+            margin-right: 20px;
+        }
+        .active-slider-block > .active > .item-price{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 100%;
+            color: #F8F7FC;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .active-slider-block > .active > .item-percent{
+            font-family: 'Sora';
+            font-size: 24px;
+            line-height: 100%;
+            color: #FF2828;
+        }
+        .active-slider-block > .active > .item-detail{
+            text-align: left;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 180%;
+            color: #F8F7FC;
+            margin: 20px 0;
+        }
+        .active-slider-block > .active > .item-buy{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+
+
+
+        .slider-item > .deactive > .item-img{
+            display: block;
+            margin: auto;
+        }
+        .slider-item > .deactive > .item-name{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            text-align: center;
+            text-transform: capitalize;
+            color: #F8F7FC;
+            margin:30px 0;
+        }
+        .slider-item > .deactive > .item-price{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 100%;
+            text-align: center;
+            color: #F8F7FC;
+            margin-top: unset;
+            margin-bottom: 20px;
+        }
+        .slider-item > .deactive > .item-percent{
+            font-family: 'Sora';
+            font-size: 24px;
+            line-height: 100%;
+            text-align: center;
+            color: #FF2828 !important;
+        }
+    </style>
+    <style>
+        #top-crypto-blur{
+            position: absolute;
+            width: 433.08px;
+            height: 653.09px;
+            right: -393px;
+            top: -187px;
+
+            background: rgba(166, 0, 193, 0.45);
+            filter: blur(300px);
+            transform: rotate(109.58deg);
+        }
+        #b-letter{
+            position: absolute;
+            top: 390px;
+            left: -175px;
+        }
+    </style>
+    <div id="top-crypto">
+        <div class="container above-grain">
+            <span class="wrapper-float">
+                <div id="top-crypto-blur"></div>
+                <img id="b-letter" src="assets/floating/b_letter.png"/>
+            </span>
+            <div class="wrapper-main-slider">
+                <div class="top-slider-crypto">
+                    <h1>
+                        Top Cryptocurrencies
+                    </h1>
+                    <div class="slick-dots">
+                        <div class="0"></div>
+                        <div class="1"></div>
+                        <div class="2"></div>
+                        <div class="3"></div>
+                        <div class="4"></div>
+                    </div>
+                </div>
+                <div class="slider-crypto" dir="rtl">
+                    <div slideIndex="0" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 1","USD 2298.08","(-8.87%)"]}' class="slider-item">
+                        <div class="deactive">
+                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <div class="item-name">
+                                Ethereum 1
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                        </div>
+                        <!-- <div class="active">
+                            <h2>
+                                01.
+                            </h2>
+                            <div class="item-name">
+                                <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> Ethereum 1
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                            <div class="item-detail">
+                                Since its launch in 2009, Bitcoin has proven to be
+                            </div>
+                            <a class="item-buy" href="">
+                                Buy Coin
+                            </a>
+                        </div> -->
+                    </div>
+                    <div slideIndex="1" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 2","USD 2298.08","(-8.87%)"]}' class="slider-item">
+                        <div class="deactive">
+                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <div class="item-name">
+                                Ethereum 2
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                        </div>
+                        <!-- <div class="active">
+                            <h2>
+                                02.
+                            </h2>
+                            <div class="item-name">
+                                <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> Ethereum 2
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                            <div class="item-detail">
+                                Since its launch in 2009, Bitcoin has proven to be
+                            </div>
+                            <a class="item-buy" href="">
+                                Buy Coin
+                            </a>
+                        </div> -->
+                    </div>
+                    <div slideIndex="2" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 3","USD 2298.08","(-8.87%)"]}' class="slider-item">
+                        <div class="deactive">
+                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <div class="item-name">
+                                Ethereum 3
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                        </div>
+                        <!-- <div class="active">
+                            <h2>
+                                03.
+                            </h2>
+                            <div class="item-name">
+                                <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> Ethereum 3
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                            <div class="item-detail">
+                                Since its launch in 2009, Bitcoin has proven to be
+                            </div>
+                            <a class="item-buy" href="">
+                                Buy Coin
+                            </a>
+                        </div> -->
+                    </div>
+                    <div slideIndex="3" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 4","USD 2298.08","(-8.87%)"]}' class="slider-item">
+                        <div class="deactive">
+                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <div class="item-name">
+                                Ethereum 4
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                        </div>
+                        <!-- <div class="active">
+                            <h2>
+                                04.
+                            </h2>
+                            <div class="item-name">
+                                <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> Ethereum 4
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                            <div class="item-detail">
+                                Since its launch in 2009, Bitcoin has proven to be
+                            </div>
+                            <a class="item-buy" href="">
+                                Buy Coin
+                            </a>
+                        </div> -->
+                    </div>
+                    <div slideIndex="4" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 5","USD 2298.08","(-8.87%)"]}' class="slider-item">
+                        <div class="deactive">
+                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <div class="item-name">
+                                Ethereum 5
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                        </div>
+                        <!-- <div class="active">
+                            <h2>
+                                05.
+                            </h2>
+                            <div class="item-name">
+                                <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> Ethereum 5
+                            </div>
+                            <h3 class="item-price">
+                                USD 2298.08
+                            </h3>
+                            <div class="item-percent">
+                                (-8.87%)
+                            </div>
+                            <div class="item-detail">
+                                Since its launch in 2009, Bitcoin has proven to be
+                            </div>
+                            <a class="item-buy" href="">
+                                Buy Coin
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="active-slider-block">
+                <div class="active">
+                    <h2>
+                        02.
+                    </h2>
+                    <div class="item-name">
+                        <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> <span>Ethereum 2</span>
+                    </div>
+                    <h3 class="item-price">
+                        USD 2298.08
+                    </h3>
+                    <div class="item-percent">
+                        (-8.87%)
+                    </div>
+                    <div class="item-detail">
+                        Since its launch in 2009, Bitcoin has proven to be
+                    </div>
+                    <a class="item-buy" href="">
+                        Buy Coin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #buy-crypto{
+            margin-bottom: 233px;
+        }
+        #buy-crypto > .container > h1{
+            text-align: center;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 130%;
+            color: #F8F7FC;
+            margin-top: 0px;
+            margin-bottom: 60px;
+        }
+        #buy-crypto > .container > h3{
+            font-family: 'Sora';
+            text-align: center;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            text-transform: capitalize;
+            color: #F8F7FC;
+            margin: unset;
+            margin-top: 70px;
+        }
+        .wrapper-buy{
+            display: flex;
+            width: 817px;
+            margin: auto;
+        }
+        .wrapper-buy > .wrapper-input{
+            flex:1;
+        }
+        .wrapper-buy > button{
+            width: 114px;
+            margin-left: 20px;
+            margin-top: 39px;
+            border: unset;
+            cursor: pointer;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 14px, #9db39c 14px, #9db39c 17px, transparent 17px), linear-gradient(to right, #9db39c, #dda85b), radial-gradient(circle at 0% 100%, transparent 14px, #dda85b 14px, #dda85b 17px, transparent 17px), linear-gradient(to bottom, #dda85b, #9db39c), radial-gradient(circle at 0% 0%, transparent 14px, #9db39c 14px, #9db39c 17px, transparent 17px), linear-gradient(to left, #9db39c, #5abedf), radial-gradient(circle at 100% 0%, transparent 14px, #5abedf 14px, #5abedf 17px, transparent 17px), linear-gradient(to top, #5abedf, #9db39c);
+            background-size: 17px 17px, calc(100% - 34px) 3px, 17px 17px, 3px calc(100% - 34px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+            outline: none;
+            position: relative;
+            border-radius: 17px;
+        }
+        .wrapper-buy > button::after{
+            content: "";
+            width: 95%;
+            height: 98%;
+            filter: blur(76px);
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 14px, #9db39c 14px, #9db39c 17px, transparent 17px), linear-gradient(to right, #9db39c, #dda85b), radial-gradient(circle at 0% 100%, transparent 14px, #dda85b 14px, #dda85b 17px, transparent 17px), linear-gradient(to bottom, #dda85b, #9db39c), radial-gradient(circle at 0% 0%, transparent 14px, #9db39c 14px, #9db39c 17px, transparent 17px), linear-gradient(to left, #9db39c, #5abedf), radial-gradient(circle at 100% 0%, transparent 14px, #5abedf 14px, #5abedf 17px, transparent 17px), linear-gradient(to top, #5abedf, #9db39c);
+            background-size: 17px 17px, calc(100% - 34px) 3px, 17px 17px, 3px calc(100% - 34px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 1%;
+            left: 3%;
+        }
+
+        .wrapper-input > div{
+            display: flex;
+            flex-direction: row;
+        }
+        .wrapper-input > div:first-child{
+            margin-bottom: 30px;
+        }
+        .wrapper-input > div > div{
+            display: flex;
+            flex-direction: column;
+            flex:5;
+        }
+        .wrapper-input > div > div > span{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            text-transform: capitalize;
+            color: #F8F7FC;
+            margin-bottom: 15px;
+        }
+        .wrapper-input > div > div:last-child{
+            flex:2;
+            margin-left: 20px;
+        }
+        .wrapper-input > div > div > select{
+            margin: 0;      
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url(assets/carret_down.svg) no-repeat right white;
+            background-position-x: 100px;
+        }
+        .input-elem{
+            margin:unset;
+            height: 70px;
+            border: unset;
+            border-radius: 15px;
+            padding: 19px 25px;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 130%;
+            color: #0A0313;
+        }
+
+        .wrapper-payment{
+            display: flex;
+            width: 564px;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .wrapper-payment > img{
+            width: 168px;
+            height: 102px;
+            background: #1D1428;
+            border-radius: 30px;
+            padding: 5%;
+        }
+    </style>
+    <style>
+        #q-letter{
+            position: absolute;
+            top: 439px;
+            right: -190px;
+        }
+        #buy-blur{
+            position: absolute;
+            width: 511.89px;
+            height: 589.78px;
+            left: -460px;
+            top: 313px;
+
+            background: rgba(131, 108, 120, 0.58);
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #line-buycrypt{
+            position: absolute;
+            left: -836px;
+            top: -7px;
+        }
+    </style>
+    <div id="buy-crypto">
+        <div class="container above-grain">
+            <span class="wrapper-float">
+                <div id="buy-blur"></div>
+                <img id="q-letter" src="assets/floating/q_letter.png"/>
+                <img id="line-buycrypt" src="assets/floating/line_buycrypt.png"/>
+            </span>
+            <h1>
+                Buy crypto
+                <br>with a debit or credit card
+            </h1>
+            <div class="wrapper-buy">
+                <div class="wrapper-input">
+                    <div>
+                        <div>
+                            <span>You Have</span>
+                            <input name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$1,000,000.00" class="input-elem" />
+                        </div>
+                        <div>
+                            <span>Currency</span>
+                            <select class="input-elem">
+                                <option>
+                                    USD
+                                </option>
+                                <option>
+                                    USD
+                                </option>
+                                <option>
+                                    USD
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>You Get</span>
+                            <input placeholder="5.000" class="input-elem" type="number"/>
+                        </div>
+                        <div>
+                            <span>Currency</span>
+                            <select class="input-elem">
+                                <option>
+                                    BTC
+                                </option>
+                                <option>
+                                    BTC
+                                </option>
+                                <option>
+                                    BTC
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/convert_ico.svg" />
+                </button>
+            </div>
+            <h3>
+                We Accept
+            </h3>
+            <div class="wrapper-payment">
+                <img src="assets/visa.svg"/>
+                <img src="assets/mastercard.svg"/>
+                <img src="assets/paypal.svg"/>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #guide{
+            margin-bottom: 170px;
+        }
+        #guide > .container{
+            display: flex;
+        }
+        .slider-control{
+            width: 35%;
+        }
+        .slider-guide{
+            width: 85%;
+            margin-right: -20%;
+            padding-left: 97px;
+        }
+        .slider-guide > .slick-list{
+            padding: 40px;
+            margin-top: -40px;
+            margin-left: -40px;
+        }
+        .slide-indicator{
+            display: flex;
+            justify-content: space-between;
+        }
+        .slide-indicator > span{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 130%;
+            color: #F8F7FC;
+        }
+        .slide-indicator > div{
+            display: flex;
+            align-items: center;
+        }
+        .slide-indicator > div > img{
+            cursor: pointer;
+        }
+        .slide-indicator > div > img:first-child{
+            margin-right: 10px;
+        }
+        .slider-control > h1{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 130%;
+            color: #F8F7FC;
+            margin-top: 38px;
+            margin-bottom: 59px;
+        }
+        .slider-control > a{
+            margin-left: 33px;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23px;
+            text-decoration-line: underline;
+            color: #F8F7FC;
+            position: relative;
+        }
+        .slider-control > a > img{
+            position: absolute;
+            top: -191%;
+            left: -45%;
+        }
+        .guide-slide-item{
+            background: #1D1428;
+            border-radius: 30px;
+            width: 301px;
+            height: 392px;
+            margin-right: 26px;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            background-image: radial-gradient(circle at 100% 100%, transparent 29px, #1D1428 29px, #1D1428 32px, transparent 32px), linear-gradient(to right, #1D1428, #1D1428), radial-gradient(circle at 0% 100%, transparent 29px, #1D1428 29px, #1D1428 32px, transparent 32px), linear-gradient(to bottom, #1D1428, #1D1428), radial-gradient(circle at 0% 0%, transparent 29px, #1D1428 29px, #1D1428 32px, transparent 32px), linear-gradient(to left, #1D1428, #1D1428), radial-gradient(circle at 100% 0%, transparent 29px, #1D1428 29px, #1D1428 32px, transparent 32px), linear-gradient(to top, #1D1428, #1D1428);
+            background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+            transition: all 200ms ease-out;
+        }
+        .guide-slide-item.slick-current{
+            position: relative;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 29px, #5abedf 29px, #5abedf 32px, transparent 32px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to left, #9db39c, #dda85b), radial-gradient(circle at 100% 0%, transparent 29px, #dda85b 29px, #dda85b 32px, transparent 32px), linear-gradient(to top, #dda85b, #9db39c);
+            background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+        }
+        .guide-slide-item.slick-current::after{
+            content:'';
+            width: 100%;
+            height: 100%;
+            top:0;
+            border-radius: 30px;
+            filter: blur(20px);
+            left: 0;
+            position: absolute;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 29px, #5abedf 29px, #5abedf 32px, transparent 32px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 29px, #9db39c 29px, #9db39c 32px, transparent 32px), linear-gradient(to left, #9db39c, #dda85b), radial-gradient(circle at 100% 0%, transparent 29px, #dda85b 29px, #dda85b 32px, transparent 32px), linear-gradient(to top, #dda85b, #9db39c);
+            background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+        }
+        .guide-slide-item > h2{
+            margin-top: 25px;
+            margin-bottom: 20px;
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            color: #F8F7FC;
+        }
+        .guide-slide-item > div{
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 180%;
+            color: #F8F7FC;
+        }
+        .guide-slide-item.slick-slide{
+            opacity: 0;
+        }
+        .guide-slide-item.slick-slide.slick-active{
+            opacity: 1;
+        }
+    </style>
+    <style>
+        #guide-blur{
+            position: absolute;
+            width: 236.93px;
+            height: 561px;
+            right: -211px;
+            top: 60px;
+
+            background: #836C78;
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #guide-blur-2{
+            position: absolute;
+            width: 303.18px;
+            height: 561px;
+            right: 0;
+            top: 204px;
+
+            background: rgba(115, 37, 192, 0.35);
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+    </style>
+    <div id="guide">
+        <div class="container above-grain">
+            <span class="wrapper-float">
+                <div id="guide-blur-2"></div>
+                <div id="guide-blur"></div>
+            </span>
+            <div class="slider-control">
+                <div class="slide-indicator">
+                    <span>1/6</span>
+                    <div>
+                        <img onclick="nextGuide(false)" src="assets/arrow_left.svg"/>
+                        <img onclick="nextGuide(true)" src="assets/arrow_right.svg"/>
+                    </div>
+                </div>
+                <h1>
+                    Start trading
+                    <br>crypto.
+                </h1>
+                <a href="">
+                    <img src="assets/circle_getstart.png"/>
+                    Start Trading
+                </a>
+            </div>
+            <div class="slider-guide">
+                <div class="guide-slide-item">
+                    <img src="assets/wallet_ico.svg"/>
+                    <h2>
+                        Payment options
+                    </h2>
+                    <div>
+                        Multiple payment methods: Visa, Mastercard, bank transfer (SWIFT, SEPA, ACH, Faster Payments), cryptocurrency
+                    </div>
+                </div>
+                <div class="guide-slide-item">
+                    <img src="assets/wallet_ico.svg"/>
+                    <h2>
+                        Payment options
+                    </h2>
+                    <div>
+                        Multiple payment methods: Visa, Mastercard, bank transfer (SWIFT, SEPA, ACH, Faster Payments), cryptocurrency
+                    </div>
+                </div>
+                <div class="guide-slide-item">
+                    <img src="assets/wallet_ico.svg"/>
+                    <h2>
+                        Payment options
+                    </h2>
+                    <div>
+                        Multiple payment methods: Visa, Mastercard, bank transfer (SWIFT, SEPA, ACH, Faster Payments), cryptocurrency
+                    </div>
+                </div>
+                <div class="guide-slide-item">
+                    <img src="assets/wallet_ico.svg"/>
+                    <h2>
+                        Payment options
+                    </h2>
+                    <div>
+                        Multiple payment methods: Visa, Mastercard, bank transfer (SWIFT, SEPA, ACH, Faster Payments), cryptocurrency
+                    </div>
+                </div>
+                <div class="guide-slide-item">
+                    <img src="assets/wallet_ico.svg"/>
+                    <h2>
+                        Payment options
+                    </h2>
+                    <div>
+                        Multiple payment methods: Visa, Mastercard, bank transfer (SWIFT, SEPA, ACH, Faster Payments), cryptocurrency
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #feature{
+            margin-bottom: 141px;
+        }
+        #feature > .container > h1{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 130%;
+            color: #F8F7FC;
+            margin-top:unset;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        #feature > .container > div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+        }
+        #feature > .container > .brand-top{
+            margin-bottom: 71px;
+        }
+    </style>
+    <div id="feature">
+        <div class="container above-grain">
+            <h1>
+                Featured in
+            </h1>
+            <div class="brand-top">
+                <img src="assets/cnn.svg"/>
+                <img src="assets/coinspeaker.svg"/>
+                <img src="assets/forbes.svg"/>
+                <img src="assets/telegraph.svg"/>
+            </div>
+            <div>
+                <img src="assets/insider.svg"/>
+                <img src="assets/blockchainnews.svg"/>
+                <img src="assets/coindesk.svg"/>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #get-start{
+            margin-bottom: 77px;
+        }
+        #get-start > .container{
+            background: linear-gradient(180deg, rgba(29, 20, 40, 0) 0%, #1D1428 100%);
+            border-radius: 30px;
+            padding: 107px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #get-start > .container > h1{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 130%;
+            text-align: center;
+            color: #F8F7FC;
+            margin-top:unset;
+            margin-bottom: 40px;
+        }
+        #get-start > .container > a{
+            font-family: 'Sora';
+            padding: 22px 40px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 100%;
+            color: #FFF2EE;
+            text-decoration: none;
+            position: relative;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+            background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+        }
+        #get-start > .container > a::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: blur(25px);
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+            background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <style>
+        #w-letter{
+            position: absolute;
+            top: -85px;
+            left: -88px;
+        }
+        #start-blur{
+            position: absolute;
+            width: 303.18px;
+            height: 561px;
+            left: -71px;
+            top: 89px;
+
+            background: #836C78;
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #start-blur-2{
+            position: absolute;
+            width: 303.18px;
+            height: 561px;
+            left: -389px;
+            top: 128px;
+
+            background: rgba(115, 37, 192, 0.35);
+            filter: blur(300px);
+            transform: rotate(58.27deg);
+        }
+        #get-start > .wrapper-float{
+            position: relative;
+            display: block;
+            margin:auto;
+            width:100%;
+            max-width: 1170px;
+            padding:0 21px;
+        }
+    </style>
+    <div id="get-start">
+        <span class="wrapper-float">
+            <div id="start-blur-2"></div>
+            <div id="start-blur"></div>
+        </span>
+        <div class="container above-grain">
+            <span class="wrapper-float">
+                <img id="w-letter" src="assets/floating/w_letter.png"/>
+            </span>
+            <h1>
+                Become part of a global community of people who have found their path to the crypto world with ByteDex!
+            </h1>
+            <a href="">
+                Get Started
+            </a>
+        </div>
+    </div>
+
+    <style>
+        #top-footer{
+            background-color: #1D1428;
+            padding-bottom: 64px;
+            padding-top: 80px;
+        }
+        #top-footer > .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        #top-footer > .container > div{
+            width:30%;
+        }
+        .left-footer > h1{
+            font-family: 'Sora';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            color: #F8F7FC;
+            margin:unset;
+        }
+        .right-footer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .right-footer > div{
+            cursor: pointer;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #FFFFFF;
+        }
+        .mid-footer{
+            display: flex;
+        }
+        .mid-footer > div{
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            color: #FFFFFF;
+            display: flex;
+            margin-right: 31px;
+            flex-direction: column;
+        }
+        .mid-footer > div > label{
+            margin-bottom: 32px;
+        }
+        .mid-footer > div > a{
+            margin-bottom: 16px;
+            text-decoration: none;
+        }
+    </style>
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        #btm-footer{
+            background-color: #1D1428;
+            border-top: 1px solid #8C8691;
+        }
+        #btm-footer > .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+        #btm-footer > .container > .detail-footer{
+            width: 437px;
+            text-align: center;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 180%;
+            color: #F8F7FC;
+        }
+        #btm-footer > .container > .wrapper-social > a{
+            text-decoration: none;
+            margin-left: 24px;
+        }
+    </style>
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img src="assets/logo.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function counterSlide(index){
+            var indicator = document.querySelector('.slide-indicator > span')
+            indicator.innerText = `${index+1}/5`
+        }
+        function dotClear(index){
+            var child = document.querySelector('.slick-dots').children
+            var childSlide = document.querySelector('.slider-crypto > .slick-list > .slick-track').children
+            var target = {
+                order: document.querySelector('.active-slider-block > .active > h2'),
+                img: document.querySelector('.active-slider-block > .active > .item-name > img'),
+                name: document.querySelector('.active-slider-block > .active > .item-name > span'),
+                price: document.querySelector('.active-slider-block > .active > .item-price'),
+                percent: document.querySelector('.active-slider-block > .active > .item-percent'),
+            }
+            for(var i=0; i<5; i++){
+                if(parseInt(child[i].className) == index){
+                    child[i].style.backgroundColor = 'white'
+                }else{
+                    child[i].style.backgroundColor = '#342A41'
+                }
+
+                if(parseInt(childSlide[i].getAttribute('slideIndex')) == index){
+                    childSlide[i].style.display = 'none'
+                    var targetData = JSON.parse(childSlide[i].getAttribute('theData')).data
+                    target.order.innerText = `0${index+1}.`
+                    target.img.src = targetData[0]
+                    target.name.innerText = targetData[1]
+                    target.price.innerText = targetData[2]
+                    target.percent.innerText = targetData[2]
+                }else{
+                    childSlide[i].style.display = 'block'
+                }
+            }   
+        }
+
+        $("input[data-type='currency']").on({
+            keyup: function() {
+            formatCurrency($(this));
+            },
+            blur: function() { 
+            formatCurrency($(this), "blur");
+            }
+        });
+
+
+        function formatNumber(n) {
+            // format number 1000000 to 1,234,567
+            return n.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
+
+        function formatCurrency(input, blur) {
+            // appends $ to value, validates decimal side
+            // and puts cursor back in right position.
+            
+            // get input value
+            var input_val = input.val();
+            
+            // don't validate empty input
+            if (input_val === "") { return; }
+            
+            // original length
+            var original_len = input_val.length;
+
+            // initial caret position 
+            var caret_pos = input.prop("selectionStart");
+                
+            // check for decimal
+            if (input_val.indexOf(".") >= 0) {
+
+                // get position of first decimal
+                // this prevents multiple decimals from
+                // being entered
+                var decimal_pos = input_val.indexOf(".");
+
+                // split number by decimal point
+                var left_side = input_val.substring(0, decimal_pos);
+                var right_side = input_val.substring(decimal_pos);
+
+                // add commas to left side of number
+                left_side = formatNumber(left_side);
+
+                // validate right side
+                right_side = formatNumber(right_side);
+                
+                // On blur make sure 2 numbers after decimal
+                if (blur === "blur") {
+                right_side += "00";
+                }
+                
+                // Limit decimal to only 2 digits
+                right_side = right_side.substring(0, 2);
+
+                // join number by .
+                input_val = "$" + left_side + "." + right_side;
+
+            } else {
+                // no decimal entered
+                // add commas to number
+                // remove all non-digits
+                input_val = formatNumber(input_val);
+                input_val = "$" + input_val;
+                
+                // final formatting
+                if (blur === "blur") {
+                input_val += ".00";
+                }
+            }
+            
+            // send updated string to input
+            input.val(input_val);
+
+            // put caret back in the right position
+            var updated_len = input_val.length;
+            caret_pos = updated_len - original_len + caret_pos;
+            input[0].setSelectionRange(caret_pos, caret_pos);
+        }
+
+        function nextGuide(p){
+            if(p){
+                $('.slider-guide').slick('slickNext');
+            }else{
+                $('.slider-guide').slick('slickPrev');
+            }
+        }
+
+        $(document).ready(function(){
+            $('.slider-crypto').on('init', function(slick){
+                dotClear(0)         
+            });
+            $('.slider-guide').on('init', function(slick){
+                counterSlide(0)         
+            });
+            $('.slider-crypto').on('afterChange', function(slick, currentSlide){
+                dotClear(currentSlide.currentSlide)         
+            });
+            $('.slider-crypto').on('wheel', (function(e) {
+                e.preventDefault();
+                if (e.originalEvent.deltaY < 0) {
+                    $(this).slick('slickPrev');
+                } else {
+                    $(this).slick('slickNext');
+                }
+            }));
+            $('.slider-guide').on('afterChange', function(slick, currentSlide){
+                counterSlide(currentSlide.currentSlide)      
+            });
+
+            $('.slider-crypto').slick({
+                rtl: true,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                cssEase: 'ease-out',
+                easing: 'ease-out',
+            });
+            $('.slider-guide').slick({
+                arrows: false,
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                cssEase: 'ease-out',
+                easing: 'ease-out',
+                variableWidth: true,
+                speed: 200,
+            });
+
+            
+            
+        });
+    </script>
+</body>
+</html>

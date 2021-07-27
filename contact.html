@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				
+
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="contact.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container nav-wrapper above-grain">
+            <span class="wrapper-float">
+                <div id="blur-nav"></div>
+                <img id="s-letter" src="assets/floating/S_letter.png"/>
+                <img id="line-nav" src="assets/floating/line_nav.png"/>
+            </span>
+
+            <a href="index.html">
+                <img src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="">
+                    Exchange
+                </a>
+                <a href="market.html">
+                    Markets
+                </a>
+                <a href="">
+                    Learn
+                </a>
+                <a href="">
+                    Forum
+                </a>
+                <a href="">
+                    Blog
+                </a>
+                <a href="contact.html">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off" src="assets/Vector.svg"/>
+                    <img class="on" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <a class="plain" href="">
+                    Exchange
+                </a>
+                <a class="plain" href="market.html">
+                    Markets
+                </a>
+                <a class="plain" href="">
+                    Learn
+                </a>
+                <a class="plain" href="">
+                    Forum
+                </a>
+                <a class="plain" href="">
+                    Blog
+                </a>
+                <a class="plain" href="contact.html">
+                    Support
+                </a>
+
+                <a href="">
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container above-grain">
+            <h1>
+                How can we help?
+            </h1>
+            <div class="searchbox">
+                <img src="assets/Search.svg"/> <input type="text" placeholder="Search"/>
+            </div>
+            <div class="contact-wrapper">
+                <h2>
+                    Submit a request
+                </h2>
+                <div class="input-contact-wrapper">
+                    <div>
+                        <label>
+                            Please choose your issue below
+                        </label>
+                        <select class="input">
+                            <option>
+                                Get Verivied
+                            </option>
+                        </select>
+                        <label>
+                            Request category*
+                        </label>
+                        <select class="input">
+                            <option>
+                                Get Verivied
+                            </option>
+                        </select>
+                        <div class="detail">
+                            Select the option that matches closest with the topic of your request. If you cannot sign in to your account, review our 'I can’t sign in to my account' article here for troubleshooting tips: https://support.kraken.com/hc/en-us/articles/201889308-I-can-t-sign-in-to-my-account-
+                        </div>
+
+                        <button class="submit-btn">
+                            Submit
+                        </button>
+                    </div>
+                    <div>
+                        <label>
+                            Email address associated with your Kraken account*
+                        </label>
+                        <input type="email" class="input" placeholder="FIll Your Email"/>
+                        <label>
+                            Tell us about your request. The more detail the better.*
+                        </label>
+                        <textarea placeholder="Write somethings in here..." class="input"></textarea>
+                        <div class="detail-textarea">
+                            A member of our support staff will respond as soon as possible.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img src="assets/logo.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

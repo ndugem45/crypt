@@ -85,6 +85,7 @@
     margin-bottom: 18px;
     border: unset;
     text-align: left;
+    text-decoration: none;
     
     font-family: 'Inter';
     font-weight: 500;
@@ -94,6 +95,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#wrapper-mobile-menu > div > a.plain{
+    margin-bottom: 30px;
 }
 #wrapper-mobile-menu > div > button.show > span{
     border-bottom: 1px solid transparent;

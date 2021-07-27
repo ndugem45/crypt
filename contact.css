@@ -1,0 +1,134 @@
+#contact{
+    margin-top: 64px;
+    padding-bottom: 128px;
+}
+#contact > .container > h1{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #F8F7FC;
+    margin-top: unset;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.searchbox{
+    width: 770px;
+    height: 62px;
+    background: #F8F7FC;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 88px;
+}
+.searchbox > img{
+    margin-left: 26px;
+    margin-right: 13px;
+}
+.searchbox > input{
+    padding: 15px 13px;
+    border:unset;
+    background: transparent;
+    width: 90%;
+    color: black;
+    margin: unset;
+    appearance: none;
+}
+.contact-wrapper > h2{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    color: #F8F7FC;
+    margin-top: unset;
+    margin-bottom: 40px;
+}
+.input-contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.input-contact-wrapper > div{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.input-contact-wrapper > div > label{
+    margin-bottom: 16px;
+    font-family: 'Sora';
+    font-size: 18px;
+    line-height: 100%;
+    color: #F8F7FC;
+}
+.input-contact-wrapper > div > .input{
+    margin-bottom: 48px;
+    height: 60px;
+    background: #F8F7FC;
+    border-radius: 15px;
+    color: black;
+    padding: 15px;
+    font-family: 'Sora';
+    font-size: 18px;
+    line-height: 130%;
+    appearance: none;
+    border:unset;
+}
+.input-contact-wrapper > div > textarea.input{
+    height: 130px;
+    margin-bottom: 8px;
+}
+.input-contact-wrapper > div > .detail-textarea{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #F8F7FC;
+}
+.input-contact-wrapper > div > .detail{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #F8F7FC;
+}
+
+
+.submit-btn{
+    margin-top: 64px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFF2EE;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    width: 162px;
+    height: 54px;
+    border-radius: 15px;
+    position: relative;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+
+    transition: all 200ms ease-out;
+}
+.submit-btn::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    filter: blur(25px);
+}

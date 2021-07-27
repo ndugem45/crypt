@@ -19,116 +19,13 @@
 
 				
 
-    <style>
-        *{
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-            color:white;
-            z-index: -1;
-        }
-        body{
-            overflow-y: auto;
-            overflow-x: hidden;
-            margin:unset;
-            width: 100vw;
-            background-color: #0F051B;
-            position: relative;
-        }
-        body::before{
-            content:'';
-            background: url(assets/grain_small.png);
-            background-position: top;
-            background-size: 300px 300px;
-            background-repeat: repeat;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            z-index: 0;
-            top: 0;
-            left: 0;
-        }
-        .above-grain{
-            z-index: 1;
-            position: relative;
-        }
-        .above-grain *{
-            z-index: 1;
-            position: relative;
-        }
-        .wrapper-float{
-            z-index: unset;
-            position: unset;
-        }
-        .container{
-            position: relative;
-            display: block;
-            margin:auto;
-            width:100%;
-            max-width: 1170px;
-            padding:0 21px;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="market.css"/>
 </head>
 <body>
-    <style>
-        #navbar{
-            border-bottom: 1px solid #8C8691;
-            padding: 32px 0 16px 0;
-        }
-        .nav-wrapper{
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .menu-nav-wrapper{
-            margin-left: 77.45px;
-            flex:1;
-            font-size: 16px;
-            line-height: 100%;
-            font-weight: 500;
-            display:flex;
-            flex-direction: row;
-        }
-        .menu-nav-wrapper > a{
-            text-decoration: none;
-            margin-right: 32px;
-        }
-        .right-nav-wrapper{
-            font-size: 16px;
-            line-height: 100%;
-            font-weight: 500;
-            display:flex;
-            flex-direction: row;
-        }
-        .right-nav-wrapper > div{
-            margin-left: 32px;
-            cursor: pointer;
-        }
-    </style>
-    <style>
-        #blur-nav{
-            position: absolute;
-            width: 303px;
-            height: 561px;
-            top: -138px;
-            left: -260px;
-            background: #836C78;
-            filter: blur(300px);
-            transform: rotate(58.27deg);
-        }
-        #s-letter{
-            position: absolute;
-            top: 231px;
-            right: -155px;
-        }
-        #line-nav{
-            position: absolute;
-            top: 143px;
-            left: -398px;
-        }
-    </style>
-     <div id="navbar">
+    <div id="navbar">
         <div class="container nav-wrapper above-grain">
             <span class="wrapper-float">
                 <div id="blur-nav"></div>
@@ -176,105 +73,74 @@
                     <img src="assets/darkmode_icon.svg">
                 </div>
             </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off" src="assets/Vector.svg"/>
+                    <img class="on" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+
+                <a href="">
+                    Download
+                </a>
+            </div>
         </div>
     </div>
 
-    <style>
-        #market{
-            margin-top:64px;
-            margin-bottom: 158px;
-        }
-        #market > .container > h1{
-            font-family: Sora;
-            font-weight: 600;
-            font-size: 48px;
-            line-height: 130%;
-            color: #F8F7FC;
-            text-align: center;
-            margin: unset;
-        }
-        .market-table{
-            width:100%;
-            margin-top: 72px;
-        }
-        .market-table > table{
-            width: 100%;
-        }
-        .table-head > td{
-            font-family: 'Sora';
-            font-size: 18px;
-            line-height: 130%;
-            color: #FFFFFF;
-            padding-bottom: 24px;
-            padding-top: 0;
-        }
-        .table-item > td{
-            font-family: 'Sora', sans-serif;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 100%;
-            color: #F8F7FC;
-            padding-bottom: 24px;
-            padding-top: 0;
-        }
-        .fade-label{
-            color: rgba(248, 247, 252, 0.7) !important;
-        }
-        .market-btn-buy{
-            font-family: 'Sora';
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 100%;
-            text-align: center;
-            color: #FFF2EE;
-            background: transparent;
-            border: unset;
-            appearance: none;
-            -webkit-appearance: none;
-            cursor: pointer;
-
-            width: 162px;
-            height: 54px;
-            border-radius: 15px;
-            position: relative;
-            background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
-            background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
-            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
-            background-repeat: no-repeat;
-
-            transition: all 200ms ease-out;
-        }
-        .market-btn-buy:hover{
-            background: rgb(90,190,223);
-            background: linear-gradient(65deg, rgba(90,190,223,1) 0%, rgba(221,168,91,1) 100%);
-        }
-        .market-btn-buy::after{
-            content: '';
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            position: absolute;
-            background-color: transparent;
-            background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
-            background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
-            background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
-            background-repeat: no-repeat;
-            filter: blur(25px);
-        }
-    </style>
-    <style>
-        #market-blur{
-            position: absolute;
-            width: 429.82px;
-            height: 648.17px;
-            background: rgba(166, 0, 193, 0.29);
-            filter: blur(300px);
-            transform: rotate(109.58deg);
-            left: -410px;
-            top: 178px;
-        }
-    </style>
     <div id="market">
         <div class="container above-grain">
             <span class="wrapper-float">
@@ -332,7 +198,295 @@
                             </td>
                             <td>
                                 <!-- <img src="assets/chart_market.png"> -->
-                                <canvas id="myChart" width="162" height="56" style="z-index: -1;"></canvas>
+                                <canvas class="myChart-1" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-2" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-3" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-4" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-5" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-6" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-7" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-8" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-9" width="162" height="56" style="z-index: -1;"></canvas>
+                            </td>
+                            <td>
+                                <button class="market-btn-buy">
+                                    Buy/Sell
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item">
+                            <td>
+                                1
+                            </td>
+                            <td width="3%">
+                                <img src="assets/bitcoin_ico.png">
+                            </td>
+                            <td>
+                                Bitcoin
+                            </td>
+                            <td class="fade-label">
+                                BTC
+                            </td>
+                            <td>
+                                $31,801.60
+                            </td>
+                            <td>
+                                -3.31%
+                            </td>
+                            <td>
+                                $598.4B	
+                            </td>
+                            <td>
+                                <!-- <img src="assets/chart_market.png"> -->
+                                <canvas class="myChart-10" width="162" height="56" style="z-index: -1;"></canvas>
                             </td>
                             <td>
                                 <button class="market-btn-buy">
@@ -344,63 +498,226 @@
                     </tbody>
                 </table>
             </div>
+
+            <style>
+
+            </style>
+            <div class="market-table-mobile">
+                <div class="market-mobile-item">
+                    <div class="top">
+                        1. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-1" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        2. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-2" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        3. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-3" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        4. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-4" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        5. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-5" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        6. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-6" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        7. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-7" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        8. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-8" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        9. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-9" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                <div class="market-mobile-item">
+                    <div class="top">
+                        10. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                    </div>
+                    <div class="mid">
+                        <span>Last Price</span>
+                        <span>$31,801.60</span>
+                    </div>
+                    <div class="mid">
+                        <span>24 Charge</span>
+                        <span>-3.31%</span>
+                    </div>
+                    <div class="mid">
+                        <span>Markets Caps</span>
+                        <span>$598.4B</span>
+                    </div>
+                    <div class="mid">
+                        <span>Chart</span>
+                        <canvas class="myChartm-10" width="162" height="56" style="z-index: -1;"></canvas>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 
-    <style>
-        #top-footer{
-            background-color: #1D1428;
-            padding-bottom: 64px;
-            padding-top: 80px;
-        }
-        #top-footer > .container{
-            display: flex;
-            justify-content: space-between;
-        }
-        #top-footer > .container > div{
-            width:30%;
-        }
-        .left-footer > h1{
-            font-family: 'Sora';
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 150%;
-            color: #F8F7FC;
-            margin:unset;
-        }
-        .right-footer{
-            display: flex;
-            justify-content: space-between;
-        }
-        .right-footer > div{
-            cursor: pointer;
-            font-family: 'Inter';
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 100%;
-            color: #FFFFFF;
-        }
-        .mid-footer{
-            display: flex;
-        }
-        .mid-footer > div{
-            font-family: 'Inter';
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 100%;
-            color: #FFFFFF;
-            display: flex;
-            margin-right: 31px;
-            flex-direction: column;
-        }
-        .mid-footer > div > label{
-            margin-bottom: 32px;
-        }
-        .mid-footer > div > a{
-            margin-bottom: 16px;
-            text-decoration: none;
-        }
-    </style>
     <div id="top-footer">
         <div class="container above-grain">
             <div class="left-footer">
@@ -473,33 +790,6 @@
         </div>
     </div>
 
-
-    <style>
-        #btm-footer{
-            background-color: #1D1428;
-            border-top: 1px solid #8C8691;
-        }
-        #btm-footer > .container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 80px;
-        }
-        #btm-footer > .container > .detail-footer{
-            width: 437px;
-            text-align: center;
-            font-family: 'Inter';
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 180%;
-            color: #F8F7FC;
-        }
-        #btm-footer > .container > .wrapper-social > a{
-            text-decoration: none;
-            margin-left: 24px;
-        }
-    </style>
     <div id="btm-footer">
         <div class="container above-grain">
             <img src="assets/logo.svg"/>
@@ -518,11 +808,16 @@
                 </a>
             </div>
         </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
     </div>
 
-
+    <script type="text/javascript" src="nav.js"></script>
     <script>
         let width, height, gradient;
+        var c = 10
+        var cha = []
         function getGradient(ctx, chartArea) {
             const chartWidth = chartArea.right - chartArea.left;
             const chartHeight = chartArea.bottom - chartArea.top;
@@ -591,10 +886,21 @@
                 }
             },
         };
-        var myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
+        
+        function detectMob() {
+            return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+        }
+
+        $(document).ready(function(){
+            var n = detectMob() ? '.myChartm-' : '.myChart-'
+            for(let i=0; i<c; i++){
+                cha.push(new Chart(
+                    document.querySelector(n+(i+1)),
+                    config
+                ))
+            }
+        });
+        
     </script>
 </body>
 </html>

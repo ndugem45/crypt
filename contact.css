@@ -34,6 +34,9 @@
     color: black;
     margin: unset;
     appearance: none;
+    font-family: 'Sora';
+    font-size: 18px;
+    line-height: 130%;
 }
 .contact-wrapper > h2{
     font-family: 'Sora';
@@ -131,4 +134,82 @@
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
     filter: blur(25px);
+}
+
+
+
+.mobile{
+    display: none;
+}
+.m-hide{
+    display: block;
+}
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    #contact > .container > h1{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .contact-wrapper > h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .input-contact-wrapper > div > label{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .searchbox{
+        width: 100%;
+        padding: 14px;
+    }
+    .input-contact-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-contact-wrapper > div{
+        width: 100%;
+    }
+    .mobile{
+        display: block;
+    }
+    .m-hide{
+        display: none;
+    }
+    .input-contact-wrapper > div > .detail{
+        margin-bottom: 32px;
+    }
+    .input-contact-wrapper > div > .input.last{
+        margin-bottom: 16px;
+    }
+}
+@media all and (max-width: 568px){
+
+
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
 }

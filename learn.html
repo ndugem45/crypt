@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				
+
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="learn.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container nav-wrapper above-grain">
+            <span class="wrapper-float">
+                <div class="blur-nav night"></div>
+                <div class="blur-nav day1 day"></div>
+                <div class="blur-nav day2 day"></div>
+                <div id="blur-nav-day" class="day"></div>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
+            </span>
+
+            <a href="index.html">
+                <img class="invert" src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="">
+                    Exchange
+                </a>
+                <a href="market.html">
+                    Markets
+                </a>
+                <a href="learn.html">
+                    Learn
+                </a>
+                <a href="">
+                    Forum
+                </a>
+                <a href="">
+                    Blog
+                </a>
+                <a href="contact.html">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off" src="assets/Vector.svg"/>
+                    <img class="on" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <a class="plain" href="">
+                    Exchange
+                </a>
+                <a class="plain" href="market.html">
+                    Markets
+                </a>
+                <a class="plain" href="learn.html">
+                    Learn
+                </a>
+                <a class="plain" href="">
+                    Forum
+                </a>
+                <a class="plain" href="">
+                    Blog
+                </a>
+                <a class="plain" href="contact.html">
+                    Support
+                </a>
+
+                <a href="">
+                    Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="feature">
+        <div class="container above-grain">
+            <h1>
+                Crypto questions, answered
+            </h1>
+            <p>
+                Beginner guides, practical tips, and market updates for first-timers, experienced investors, and everyone in between.
+            </p>
+            
+            <h2 class="heading-feature">
+                Featured
+            </h2>
+            <div class="media-feature">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popular">
+        <div class="container above-grain">
+            <h2 class="heading-popular">
+                Popular
+            </h2>
+            <div class="wrapper-popular">
+                <div class="popular-item">
+                    <label>
+                        Lorem ipsum dolor
+                    </label>
+                    <div>
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <label>
+                        Lorem ipsum dolor
+                    </label>
+                    <div>
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <label>
+                        Lorem ipsum dolor
+                    </label>
+                    <div>
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <label>
+                        Lorem ipsum dolor
+                    </label>
+                    <div>
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <label>
+                        Lorem ipsum dolor
+                    </label>
+                    <div>
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="popular-item">
+                    <label>
+                        Lorem ipsum dolor
+                    </label>
+                    <div>
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="media">
+        <div class="top container above-grain">
+            <h1 class="heading-media">
+                Consectetur adipiscing elit.
+            </h1>
+            <p class="detail-media">
+                Beginner guides, practical tips, and market updates for first-timers, experienced investors, and everyone in between.
+            </p>
+        </div>
+
+
+        
+        <div class="mid container above-grain">
+            <div class="media-mid-item">
+                <img src="assets/media_ico.png"/>
+                <div>
+                    <label>
+                        Lorem ipsum
+                    </label>
+                    <a href="">
+                        See More
+                    </a>
+                </div>
+            </div>
+            <div class="media-mid-item">
+                <img src="assets/media_ico.png"/>
+                <div>
+                    <label>
+                        Lorem ipsum
+                    </label>
+                    <a href="">
+                        See More
+                    </a>
+                </div>
+            </div>
+            <div class="media-mid-item">
+                <img src="assets/media_ico.png"/>
+                <div>
+                    <label>
+                        Lorem ipsum
+                    </label>
+                    <a href="">
+                        See More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="btm container above-grain">
+            <div class="btm-item">
+                <div class="btm-media"></div>
+                <h2 class="btm-heading">
+                    Consectetur adipiscing elit.
+                </h2>
+                <p class="btm-detail">
+                    Beginner guides, practical tips, and market updates for first-timers, exper.
+                </p>
+            </div>
+            <div class="btm-item">
+                <div class="btm-media"></div>
+                <h2 class="btm-heading">
+                    Consectetur adipiscing elit.
+                </h2>
+                <p class="btm-detail">
+                    Beginner guides, practical tips, and market updates for first-timers, exper.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="get-start">
+        <span class="wrapper-float">
+            <div id="start-blur-2"></div>
+            <div id="start-blur"></div>
+        </span>
+        <div class="container above-grain">
+            <h1>
+                Become part of a global community of people who have found their path to the crypto world with ByteDex!
+            </h1>
+            <a href="">
+                Get Started
+            </a>
+        </div>
+    </div>
+
+
+    
+    <div id="article">
+        <div class="container above-grain">
+            <div class="article-item">
+                <img src="" />
+                <div>
+                    <label>
+                        Consectetur adipiscing elit.
+                    </label>
+                    <p>
+                        Beginner guides, practical tips, and market updates for first-timers, exper.
+                    </p>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="" />
+                <div>
+                    <label>
+                        Consectetur adipiscing elit.
+                    </label>
+                    <p>
+                        Beginner guides, practical tips, and market updates for first-timers, exper.
+                    </p>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="" />
+                <div>
+                    <label>
+                        Consectetur adipiscing elit.
+                    </label>
+                    <p>
+                        Beginner guides, practical tips, and market updates for first-timers, exper.
+                    </p>
+                </div>
+            </div>
+            <div class="article-item">
+                <img src="" />
+                <div>
+                    <label>
+                        Consectetur adipiscing elit.
+                    </label>
+                    <p>
+                        Beginner guides, practical tips, and market updates for first-timers, exper.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img class="invert" src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

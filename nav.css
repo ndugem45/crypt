@@ -63,7 +63,7 @@
     width: 100vw;
     height: 0;
     overflow: hidden;
-    background: #1D1428;
+    background: var(--market-bg);
     z-index: 3;
     transition: all 200ms ease;
 }
@@ -138,13 +138,30 @@
 }
 
 /* float nav  */
-#blur-nav{
+.blur-nav{
     position: absolute;
     width: 303px;
     height: 561px;
     top: -138px;
     left: -260px;
     background: #836C78;
+    filter: blur(300px);
+    transform: rotate(58.27deg);
+}
+.blur-nav.day1{
+    background: rgba(217, 254, 253, 0.33);
+}
+.blur-nav.day2{
+    background: rgba(215, 169, 98, 0.25);
+}
+#blur-nav-day{
+    position:absolute;
+    width: 476.64px;
+    height: 688.74px;
+    right: -342px;
+    top: -479px;
+
+    background: rgba(215, 169, 98, 0.25);
     filter: blur(300px);
     transform: rotate(58.27deg);
 }

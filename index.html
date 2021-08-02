@@ -27,13 +27,17 @@
     <div id="navbar">
         <div class="container nav-wrapper above-grain">
             <span class="wrapper-float">
-                <div id="blur-nav"></div>
-                <img id="s-letter" src="assets/floating/S_letter.png"/>
-                <img id="line-nav" src="assets/floating/line_nav.png"/>
+                <div class="blur-nav night"></div>
+                <div class="blur-nav day1 day"></div>
+                <div class="blur-nav day2 day"></div>
+                <div id="blur-nav-day" class="day"></div>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
             </span>
 
             <a href="index.html">
-                <img src="assets/logo.svg">
+                <img class="invert" src="assets/logo.svg">
             </a>
             <div class="menu-nav-wrapper">
                 <a href="index.html">
@@ -45,7 +49,7 @@
                 <a href="market.html">
                     Markets
                 </a>
-                <a href="">
+                <a href="learn.html">
                     Learn
                 </a>
                 <a href="">
@@ -69,13 +73,13 @@
                     USD
                 </div>
                 <div>
-                    <img src="assets/darkmode_icon.svg">
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
                 </div>
             </div>
             <div class="right-mobile">
                 <button onclick="toggleMobileMenu(this)">
-                    <img class="off" src="assets/Vector.svg"/>
-                    <img class="on" src="assets/Vector_x.svg"/>
+                    <img class="off invert" src="assets/Vector.svg"/>
+                    <img class="on invert" src="assets/Vector_x.svg"/>
                 </button>
                 
             </div>
@@ -83,7 +87,7 @@
         <div id="wrapper-mobile-menu">
             <div>
                 <button onclick="togglePanel(this)">
-                    <span>Home</span> <img src="assets/carret.svg"/>
+                    <span>Home</span> <img class="invert" src="assets/carret.svg"/>
                 </button>
                 <div class="panel">
                     <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
@@ -98,7 +102,7 @@
                 <a class="plain" href="market.html">
                     Markets
                 </a>
-                <a class="plain" href="">
+                <a class="plain" href="learn.html">
                     Learn
                 </a>
                 <a class="plain" href="">
@@ -114,6 +118,15 @@
                 <a href="">
                     Download
                 </a>
+                <a href="">
+                    English
+                </a>
+                <a href="">
+                    USD
+                </a>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
             </div>
         </div>
     </div>
@@ -125,7 +138,7 @@
                 <img id="hero-star" src="assets/hero_star.svg">
                 <h1>
                     A robust 
-                    <br>and secure cryptocurrency exchange <img src="assets/hero_head_icon.svg">
+                    <br>and secure cryptocurrency exchange <img class="invert" src="assets/hero_head_icon.svg">
                 </h1>
             </div>
             <div>
@@ -140,9 +153,11 @@
         </div>
         <div class="container above-grain">
             <span class="wrapper-float">
-                <div id="hero-blur"></div>
-                <div id="hero-blur-2"></div>
-                <img id="line-hero" src="assets/floating/line_hero.png"/>
+                <div class="hero-blur night"></div>
+                <div class="hero-blur day"></div>
+                <div class="hero-blur-2 night"></div>
+                <div class="hero-blur-2 day"></div>
+                <img id="line-hero" class="invert" src="assets/floating/line_hero.png"/>
             </span>
 
             <div class="hero-img">
@@ -155,43 +170,43 @@
                 </h1>
                 <div class="download-wrapper">
                     <a class="download-item" href="">
-                        <img src="assets/app_store.svg">
+                        <img class="invert" src="assets/app_store.svg">
                         <div>
                             App Store
                         </div>
                     </a>
                     <a class="download-item" href="">
-                        <img src="assets/android_apk.svg">
+                        <img class="invert" src="assets/android_apk.svg">
                         <div>
                             Android APK
                         </div>
                     </a>
                     <a class="download-item" href="">
-                        <img src="assets/google_play.svg">
+                        <img class="invert" src="assets/google_play.svg">
                         <div>
                             Google Play
                         </div>
                     </a>
                     <a class="download-item" href="">
-                        <img src="assets/macos.svg">
+                        <img class="invert" src="assets/macos.svg">
                         <div>
                             MacOS
                         </div>
                     </a>
                     <a class="download-item" href="">
-                        <img src="assets/windows.svg">
+                        <img class="invert" src="assets/windows.svg">
                         <div>
                             Windows
                         </div>
                     </a>
                     <a class="download-item" href="">
-                        <img src="assets/linux.svg">
+                        <img class="invert" src="assets/linux.svg">
                         <div>
                             Linux
                         </div>
                     </a>
                     <a class="download-item" href="">
-                        <img src="assets/api.svg">
+                        <img class="invert" src="assets/api.svg">
                         <div>
                             API
                         </div>
@@ -205,7 +220,8 @@
     <div id="market">
         <div class="container above-grain">
             <span class="wrapper-float">
-                <div id="market-blur"></div>
+                <div class="market-blur night"></div>
+                <div class="market-blur day"></div>
             </span>
             <h1>
                 Market Trends
@@ -240,7 +256,7 @@
                                 1
                             </td>
                             <td width="3%">
-                                <img src="assets/bitcoin_ico.png">
+                                <img class="invert" src="assets/bitcoin_ico.png">
                             </td>
                             <td>
                                 Bitcoin
@@ -266,7 +282,7 @@
                                 2
                             </td>
                             <td width="3%">
-                                <img src="assets/bitcoin_ico.png">
+                                <img class="invert" src="assets/bitcoin_ico.png">
                             </td>
                             <td>
                                 Bitcoin
@@ -292,7 +308,7 @@
                                 3
                             </td>
                             <td width="3%">
-                                <img src="assets/bitcoin_ico.png">
+                                <img class="invert" src="assets/bitcoin_ico.png">
                             </td>
                             <td>
                                 Bitcoin
@@ -318,7 +334,7 @@
                                 4
                             </td>
                             <td width="3%">
-                                <img src="assets/bitcoin_ico.png">
+                                <img class="invert" src="assets/bitcoin_ico.png">
                             </td>
                             <td>
                                 Bitcoin
@@ -344,7 +360,7 @@
                                 5
                             </td>
                             <td width="3%">
-                                <img src="assets/bitcoin_ico.png">
+                                <img class="invert" src="assets/bitcoin_ico.png">
                             </td>
                             <td>
                                 Bitcoin
@@ -374,7 +390,7 @@
             <div class="market-mobile">
                 <div class="market-mobile-item">
                     <div class="top">
-                        1. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                        1. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade invert">BTC</span>
                     </div>
                     <div class="mid">
                         <span>Last Price</span>
@@ -395,7 +411,7 @@
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
-                        2. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                        2. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade invert">BTC</span>
                     </div>
                     <div class="mid">
                         <span>Last Price</span>
@@ -416,7 +432,7 @@
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
-                        3. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                        3. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade invert">BTC</span>
                     </div>
                     <div class="mid">
                         <span>Last Price</span>
@@ -437,7 +453,7 @@
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
-                        4. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                        4. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade invert">BTC</span>
                     </div>
                     <div class="mid">
                         <span>Last Price</span>
@@ -458,7 +474,7 @@
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
-                        5. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade">BTC</span>
+                        5. <img src="assets/icon_menu.svg"/> <span>Bitcoin</span> <span class="fade invert">BTC</span>
                     </div>
                     <div class="mid">
                         <span>Last Price</span>
@@ -502,8 +518,11 @@
         </div>
         <div class="container above-grain">
             <span class="wrapper-float">
-                <div id="top-crypto-blur"></div>
-                <img id="b-letter" src="assets/floating/b_letter.png"/>
+                <div class="top-crypto-blur night"></div>
+                <div class="top-crypto-blur day"></div>
+                <div class="top-crypto-blur day1 day"></div>
+                <img id="b-letter" class="night" src="assets/floating/b_letter.png"/>
+                <img id="b-letter" class="day" src="assets/floating/b_letter_day.png"/>
             </span>
             
             <div class="wrapper-main-slider">
@@ -522,7 +541,7 @@
                 <div class="slider-crypto" dir="rtl">
                     <div slideIndex="0" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 1","USD 2298.08","(-8.87%)"]}' class="slider-item">
                         <div class="deactive">
-                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <img class="item-img invert" src="assets/slider_bitcoin_ico.svg" />
                             <div class="item-name">
                                 Ethereum 1
                             </div>
@@ -536,7 +555,7 @@
                     </div>
                     <div slideIndex="1" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 2","USD 2298.08","(-8.87%)"]}' class="slider-item">
                         <div class="deactive">
-                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <img class="item-img invert" src="assets/slider_bitcoin_ico.svg" />
                             <div class="item-name">
                                 Ethereum 2
                             </div>
@@ -550,7 +569,7 @@
                     </div>
                     <div slideIndex="2" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 3","USD 2298.08","(-8.87%)"]}' class="slider-item">
                         <div class="deactive">
-                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <img class="item-img invert" src="assets/slider_bitcoin_ico.svg" />
                             <div class="item-name">
                                 Ethereum 3
                             </div>
@@ -564,7 +583,7 @@
                     </div>
                     <div slideIndex="3" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 4","USD 2298.08","(-8.87%)"]}' class="slider-item">
                         <div class="deactive">
-                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <img class="item-img invert" src="assets/slider_bitcoin_ico.svg" />
                             <div class="item-name">
                                 Ethereum 4
                             </div>
@@ -578,7 +597,7 @@
                     </div>
                     <div slideIndex="4" theData='{"data": ["assets/slider_bitcoin_ico.svg","Ethereum 5","USD 2298.08","(-8.87%)"]}' class="slider-item">
                         <div class="deactive">
-                            <img class="item-img" src="assets/slider_bitcoin_ico.svg" />
+                            <img class="item-img invert" src="assets/slider_bitcoin_ico.svg" />
                             <div class="item-name">
                                 Ethereum 5
                             </div>
@@ -599,7 +618,7 @@
                         02.
                     </h2>
                     <div class="item-name">
-                        <img class="item-img" src="assets/slider_bitcoin_ico.svg" /> <span>Ethereum 2</span>
+                        <img class="item-img invert" src="assets/slider_bitcoin_ico.svg" /> <span>Ethereum 2</span>
                     </div>
                     <h3 class="item-price">
                         USD 2298.08
@@ -622,9 +641,11 @@
     <div id="buy-crypto">
         <div class="container above-grain">
             <span class="wrapper-float">
-                <div id="buy-blur"></div>
-                <img id="q-letter" src="assets/floating/q_letter.png"/>
-                <img id="line-buycrypt" src="assets/floating/line_buycrypt.png"/>
+                <div class="buy-blur night"></div>
+                <div class="buy-blur day"></div>
+                <img id="q-letter" class="night" src="assets/floating/q_letter.png"/>
+                <img id="q-letter" class="day" src="assets/floating/q_letter_day.png"/>
+                <img id="line-buycrypt" class="invert" src="assets/floating/line_buycrypt.png"/>
             </span>
             <h1>
                 Buy crypto
@@ -668,16 +689,17 @@
                     </div>
                 </div>
                 <button onclick="conversion()">
-                    <img src="assets/convert_ico.svg" />
+                    <img class="night" src="assets/convert_ico.svg" />
+                    <img class="day" src="assets/convert_ico_day.png" />
                 </button>
             </div>
             <h3>
                 We Accept
             </h3>
             <div class="wrapper-payment">
-                <img src="assets/visa.svg"/>
-                <img src="assets/mastercard.svg"/>
-                <img src="assets/paypal.svg"/>
+                <img class="invert" src="assets/visa.svg"/>
+                <img class="invert" src="assets/mastercard.svg"/>
+                <img class="invert" src="assets/paypal.svg"/>
             </div>
         </div>
     </div>
@@ -686,15 +708,17 @@
     <div id="guide">
         <div class="container above-grain">
             <span class="wrapper-float">
-                <div id="guide-blur-2"></div>
-                <div id="guide-blur"></div>
+                <div class="guide-blur-2 night"></div>
+                <div class="guide-blur night"></div>
+                <div class="guide-blur-2 day"></div>
+                <div class="guide-blur day"></div>
             </span>
             <div class="slider-control">
                 <div class="slide-indicator">
                     <span>1/6</span>
                     <div>
-                        <img onclick="nextGuide(false)" src="assets/arrow_left.svg"/>
-                        <img onclick="nextGuide(true)" src="assets/arrow_right.svg"/>
+                        <img onclick="nextGuide(false)" class="invert" src="assets/arrow_left.svg"/>
+                        <img onclick="nextGuide(true)" class="invert" src="assets/arrow_right.svg"/>
                     </div>
                 </div>
                 <h1>
@@ -708,7 +732,7 @@
             </div>
             <div class="slider-guide">
                 <div class="guide-slide-item">
-                    <img src="assets/wallet_ico.svg"/>
+                    <img class="invert" src="assets/wallet_ico.svg"/>
                     <h2>
                         Payment options
                     </h2>
@@ -717,7 +741,7 @@
                     </div>
                 </div>
                 <div class="guide-slide-item">
-                    <img src="assets/wallet_ico.svg"/>
+                    <img class="invert" src="assets/wallet_ico.svg"/>
                     <h2>
                         Payment options
                     </h2>
@@ -726,7 +750,7 @@
                     </div>
                 </div>
                 <div class="guide-slide-item">
-                    <img src="assets/wallet_ico.svg"/>
+                    <img class="invert" src="assets/wallet_ico.svg"/>
                     <h2>
                         Payment options
                     </h2>
@@ -735,7 +759,7 @@
                     </div>
                 </div>
                 <div class="guide-slide-item">
-                    <img src="assets/wallet_ico.svg"/>
+                    <img class="invert" src="assets/wallet_ico.svg"/>
                     <h2>
                         Payment options
                     </h2>
@@ -744,7 +768,7 @@
                     </div>
                 </div>
                 <div class="guide-slide-item">
-                    <img src="assets/wallet_ico.svg"/>
+                    <img class="invert" src="assets/wallet_ico.svg"/>
                     <h2>
                         Payment options
                     </h2>
@@ -763,15 +787,15 @@
                 Featured in
             </h1>
             <div class="brand-top">
-                <img src="assets/cnn.svg"/>
-                <img src="assets/coinspeaker.svg"/>
-                <img src="assets/forbes.svg"/>
-                <img src="assets/telegraph.svg"/>
+                <img class="invert" src="assets/cnn.svg"/>
+                <img class="invert" src="assets/coinspeaker.svg"/>
+                <img class="invert" src="assets/forbes.svg"/>
+                <img class="invert" src="assets/telegraph.svg"/>
             </div>
             <div>
-                <img src="assets/insider.svg"/>
-                <img src="assets/blockchainnews.svg"/>
-                <img src="assets/coindesk.svg"/>
+                <img class="invert" src="assets/insider.svg"/>
+                <img class="invert" src="assets/blockchainnews.svg"/>
+                <img class="invert" src="assets/coindesk.svg"/>
             </div>
         </div>
     </div>
@@ -779,12 +803,15 @@
     
     <div id="get-start">
         <span class="wrapper-float">
-            <div id="start-blur-2"></div>
-            <div id="start-blur"></div>
+            <div class="start-blur-2 night"></div>
+            <div class="start-blur night"></div>
+            <div class="start-blur-2 day"></div>
+            <div class="start-blur day"></div>
         </span>
         <div class="container above-grain">
             <span class="wrapper-float">
-                <img id="w-letter" src="assets/floating/w_letter.png"/>
+                <img id="w-letter" class="night" src="assets/floating/w_letter.png"/>
+                <img id="w-letter" class="day" src="assets/floating/w_letter_day.png"/>
             </span>
             <h1>
                 Become part of a global community of people who have found their path to the crypto world with ByteDex!
@@ -862,7 +889,7 @@
                     USD
                 </div>
                 <div>
-                    <img src="assets/darkmode_icon.svg">
+                    <img class="invert" src="assets/darkmode_icon.svg">
                 </div>
             </div>
         </div>
@@ -872,19 +899,20 @@
     
     <div id="btm-footer">
         <div class="container above-grain">
-            <img src="assets/logo.svg"/>
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
             <div class="detail-footer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
             </div>
             <div class="wrapper-social">
                 <a href="">
-                    <img src="assets/facebook.svg"/>
+                    <img class="invert" src="assets/facebook.svg"/>
                 </a>
                 <a href="">
-                    <img src="assets/twitter.svg"/>
+                    <img class="invert" src="assets/twitter.svg"/>
                 </a>
                 <a href="">
-                    <img src="assets/linkedin.svg"/>
+                    <img class="invert" src="assets/linkedin.svg"/>
                 </a>
             </div>
         </div>

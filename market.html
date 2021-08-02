@@ -28,13 +28,17 @@
     <div id="navbar">
         <div class="container nav-wrapper above-grain">
             <span class="wrapper-float">
-                <div id="blur-nav"></div>
-                <img id="s-letter" src="assets/floating/S_letter.png"/>
-                <img id="line-nav" src="assets/floating/line_nav.png"/>
+                <div class="blur-nav night"></div>
+                <div class="blur-nav day1 day"></div>
+                <div class="blur-nav day2 day"></div>
+                <div id="blur-nav-day" class="day"></div>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
             </span>
 
             <a href="index.html">
-                <img src="assets/logo.svg">
+                <img class="invert" src="assets/logo.svg">
             </a>
             <div class="menu-nav-wrapper">
                 <a href="index.html">
@@ -46,7 +50,7 @@
                 <a href="market.html">
                     Markets
                 </a>
-                <a href="">
+                <a href="learn.html">
                     Learn
                 </a>
                 <a href="">
@@ -70,7 +74,7 @@
                     USD
                 </div>
                 <div>
-                    <img src="assets/darkmode_icon.svg">
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
                 </div>
             </div>
             <div class="right-mobile">
@@ -99,7 +103,7 @@
                 <a class="plain" href="market.html">
                     Markets
                 </a>
-                <a class="plain" href="">
+                <a class="plain" href="learn.html">
                     Learn
                 </a>
                 <a class="plain" href="">
@@ -759,27 +763,30 @@
                     USD
                 </div>
                 <div>
-                    <img src="assets/darkmode_icon.svg">
+                    <img class="invert" src="assets/darkmode_icon.svg">
                 </div>
             </div>
         </div>
     </div>
 
+
+    
     <div id="btm-footer">
         <div class="container above-grain">
-            <img src="assets/logo.svg"/>
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
             <div class="detail-footer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
             </div>
             <div class="wrapper-social">
                 <a href="">
-                    <img src="assets/facebook.svg"/>
+                    <img class="invert" src="assets/facebook.svg"/>
                 </a>
                 <a href="">
-                    <img src="assets/twitter.svg"/>
+                    <img class="invert" src="assets/twitter.svg"/>
                 </a>
                 <a href="">
-                    <img src="assets/linkedin.svg"/>
+                    <img class="invert" src="assets/linkedin.svg"/>
                 </a>
             </div>
         </div>

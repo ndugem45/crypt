@@ -9,7 +9,7 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 130%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin: unset;
     margin-bottom: 8px;
 }
@@ -18,7 +18,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 180%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     max-width: 610px;
     margin: auto;
     margin-bottom: 88px;
@@ -28,7 +28,7 @@
     font-weight: 600;
     font-size: 36px;
     line-height: 100%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin: unset;
     margin-bottom: 32px;
     text-align: left;
@@ -50,7 +50,7 @@
     font-weight: 600;
     font-size: 36px;
     line-height: 100%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin: unset;
     margin-bottom: 32px;
     text-align: left;
@@ -67,7 +67,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin-bottom: 48px;
 }
 .popular-item > label{
@@ -92,7 +92,7 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 130%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin: unset;
 }
 #media > .top > p{
@@ -100,7 +100,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 180%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin: unset;
     padding-right: 115px;
 }
@@ -131,7 +131,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin-bottom: 16px;
 }
 .media-mid-item > div > a{
@@ -139,7 +139,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     text-decoration: none;
 }
 
@@ -163,7 +163,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin: unset;
     margin-top: 32px;
     margin-bottom: 16px;
@@ -174,7 +174,7 @@
     font-size: 18px;
     line-height: 180%;
     margin: unset;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
 }
 /* end media  */
 
@@ -183,7 +183,7 @@
     margin-bottom: 88px;
 }
 #get-start > .container{
-    background: linear-gradient(180deg, rgba(29, 20, 40, 0) 0%, #1D1428 100%);
+    background: var(--start-bg);
     border-radius: 30px;
     padding: 107px 100px;
     display: flex;
@@ -197,7 +197,7 @@
     font-size: 36px;
     line-height: 130%;
     text-align: center;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin-top:unset;
     margin-bottom: 40px;
 }
@@ -207,7 +207,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
-    color: #FFF2EE;
+    /* color: #FFF2EE; */
     text-decoration: none;
     position: relative;
     background-color: transparent;
@@ -233,7 +233,7 @@
 }
 
 /* float get start  */
-#start-blur{
+.start-blur{
     position: absolute;
     width: 303.18px;
     height: 561px;
@@ -244,7 +244,10 @@
     filter: blur(300px);
     transform: rotate(58.27deg);
 }
-#start-blur-2{
+.start-blur.day{
+    background: #F9F1E6;
+}
+.start-blur-2{
     position: absolute;
     width: 303.18px;
     height: 561px;
@@ -254,6 +257,9 @@
     background: rgba(115, 37, 192, 0.35);
     filter: blur(300px);
     transform: rotate(58.27deg);
+}
+.start-blur-2.day{
+    background: #EDE6D5;
 }
 #get-start > .wrapper-float{
     position: relative;
@@ -294,7 +300,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
     margin-bottom: 24px;
 }
 .article-item > div > p{
@@ -303,7 +309,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 180%;
-    color: #F8F7FC;
+    /* color: #F8F7FC; */
 }
 /* end article  */
 

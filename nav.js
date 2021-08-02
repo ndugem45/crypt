@@ -16,6 +16,11 @@ function togglePanel(e){
     }
 }
 
+function detectMob() {
+    console.log(window.innerWidth)
+    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+}
+
 function dayNight(){
     var root = document.documentElement;
     var body = document.querySelector("body");

@@ -79,8 +79,8 @@
             </div>
             <div class="right-mobile">
                 <button onclick="toggleMobileMenu(this)">
-                    <img class="off" src="assets/Vector.svg"/>
-                    <img class="on" src="assets/Vector_x.svg"/>
+                    <img class="off invert" src="assets/Vector.svg"/>
+                    <img class="on invert" src="assets/Vector_x.svg"/>
                 </button>
                 
             </div>
@@ -88,7 +88,7 @@
         <div id="wrapper-mobile-menu">
             <div>
                 <button onclick="togglePanel(this)">
-                    <span>Home</span> <img src="assets/carret.svg"/>
+                    <span>Home</span> <img class="invert" src="assets/carret.svg"/>
                 </button>
                 <div class="panel">
                     <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
@@ -119,10 +119,18 @@
                 <a href="">
                     Download
                 </a>
+                <a href="">
+                    English
+                </a>
+                <a href="">
+                    USD
+                </a>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
             </div>
         </div>
     </div>
-
 
     <div id="contact">
         <div class="container above-grain">

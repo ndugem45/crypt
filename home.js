@@ -278,8 +278,9 @@ $(document).ready(function(){
             },
         };
 
+        
         var n = detectMob() ? '.myChartm-' : '.myChart-'
-
+        
         for(let i=0; i<c; i++){
             cha.push(new Chart(
                 document.querySelector(n+(i+1)),

@@ -17,8 +17,7 @@ function togglePanel(e){
 }
 
 function detectMob() {
-    console.log(window.innerWidth)
-    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+    return window.innerWidth <= 800 && window.innerWidth <= 600 ? true : false
 }
 
 function dayNight(){

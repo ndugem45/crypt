@@ -79,6 +79,8 @@ body::before{
 .wrapper-float{
     z-index: unset;
     position: unset;
+
+    display: none;
 }
 .container{
     position: relative;

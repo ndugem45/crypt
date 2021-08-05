@@ -23,6 +23,90 @@
     text-decoration: none;
     margin-right: 32px;
 }
+.btn-hover,
+.btn-dropdown{
+    position: relative;
+}
+.btn-hover::after{
+    width: 100%;
+    left: 0;
+    bottom: -37px;
+    content: '';
+    position: absolute;
+    border-bottom: 0px solid #DDA85B;
+    transition: all 100ms ease-out;
+}
+.btn-hover:hover::after{
+    border-bottom: 4px solid #DDA85B;
+}
+.btn-dropdown::after{
+    content: '';
+    position: absolute;
+    right: -16px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    filter: var(--invert);
+    transform: rotate(0deg);
+    transition: transform 200ms ease-out;
+    background: url('assets/carret_down_white.svg');
+}
+.btn-dropdown.rotate::after{
+    transform: rotate(180deg);
+}
+.dropdown-wrapper{
+    position: absolute;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: 109px;
+    z-index: 2;
+    width: 100%;
+    max-height: 0;
+    background: var(--market-bg);
+    overflow: hidden;
+    transition: all 100ms ease;
+}
+.dropdown-wrapper.show{
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.dropdown-wrapper > .container{
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dropdown-item{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 50px 40px 50px;
+}
+.dropdown-item > img{
+    width: 70px;
+    height: 70px;
+    margin-right: 24px;
+}
+.dropdown-item > div{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-item > div > span{
+    text-decoration: none;
+}
+.dropdown-item > div > span:first-child{
+    margin-bottom: 8px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+.dropdown-item > div > span:last-child{
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 100%;
+}
 .right-nav-wrapper{
     font-size: 16px;
     line-height: 100%;

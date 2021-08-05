@@ -168,7 +168,7 @@
 }
 .why-item{
     width: 32%;
-    background: #1D1428;
+    background: var(--market-bg);
     border-radius: 30px;
     display: flex;
     flex-direction: column;

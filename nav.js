@@ -4,6 +4,21 @@ function toggleMobileMenu(p){
     p.classList.toggle("on")
 }
 
+function toggleDropdown(e){
+    
+    var d = document.querySelector('.dropdown-wrapper')
+    
+    d.classList.toggle("show")
+
+    setTimeout(()=>{
+        if(d.style.maxHeight){
+            d.style.maxHeight = null
+        }else{
+            d.style.maxHeight = `${d.scrollHeight+32}px`
+        }
+    },50)
+}
+
 function togglePanel(e){
 
     e.classList.toggle("show")
@@ -33,7 +48,7 @@ function dayNight(){
     root.style.setProperty('--grain-a', dn ? "var(--grain-day)" : "var(--grain-night)");
     root.style.setProperty('--day-elem', dn ? "block" : "none");
     root.style.setProperty('--night-elem', dn ? "none" : "block");
-    root.style.setProperty('--invert', dn ? "invert(1) saturate(0)" : "invert(0) saturate(0)");
+    root.style.setProperty('--invert', dn ? "invert(1) saturate(0)" : "invert(0) saturate(1)");
     
 
     setTimeout(()=>{
@@ -45,5 +60,6 @@ function dayNight(){
         document.querySelector('.active-slider-block > .active').style.background = dn ? '#ffff' : 'transparent';
         document.querySelector('.guide-slide-item.slick-active').style.background = dn ? '#ffff' : 'transparent';
     },200)
+    
     body.classList.toggle("dayNight")
 }

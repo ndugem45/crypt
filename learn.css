@@ -180,7 +180,7 @@
 
 /* get start  */
 #get-start{
-    margin-bottom: 88px;
+    margin-bottom: 77px;
 }
 #get-start > .container{
     background: var(--start-bg);
@@ -233,6 +233,27 @@
 }
 
 /* float get start  */
+.blur-start1{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -71px;
+    top: 89px;
+    transform: scale(2) rotate(58.27deg);
+}
+.blur-start2{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -389px;
+    top: 128px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
+
+
+
 .start-blur{
     position: absolute;
     width: 303.18px;

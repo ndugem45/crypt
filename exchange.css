@@ -133,6 +133,17 @@
 }
 
 /* market float  */
+.blur-market{
+    position: absolute;
+    width: 429.82px;
+    height: 648.17px;
+    transform: scale(2) rotate(109.58deg);
+    left: -410px;
+    top: 178px;
+}
+
+
+
 .market-blur{
     position: absolute;
     width: 429.82px;
@@ -196,3 +207,22 @@
     text-align: center;
 }
 /* end why  */
+
+/* why float  */
+.why-blur-1{
+    position: absolute;
+    width: 433.08px;
+    height: 653.09px;
+    right: -528px;
+    top: 443px;
+    transform: scale(2) rotate(109.58deg);
+}
+.why-blur-2{
+    position: absolute;
+    width: 433.08px;
+    height: 653.09px;
+    left: -411px;
+    top: -92px;
+    transform: scale(2) rotate(109.58deg);
+}
+/* end why float  */

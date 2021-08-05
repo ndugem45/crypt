@@ -82,6 +82,17 @@
     filter: blur(25px);
 }
 /* floating market  */
+.blur-market{
+    position: absolute;
+    width: 429.82px;
+    height: 648.17px;
+    transform: scale(2) rotate(109.58deg);
+    left: -410px;
+    top: 178px;
+}
+
+
+
 .market-blur{
     position: absolute;
     width: 429.82px;
@@ -93,7 +104,7 @@
     top: 178px;
 }
 .market-blur.day{
-    background: rgba(217, 254, 253, 0.75);
+    background: rgba(246, 235, 219, 0.71);
 }
 /* market end */
 

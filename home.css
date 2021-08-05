@@ -114,6 +114,24 @@
 
 
 /* hero float */
+.blur-hero1{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: 144px;
+    top: 166px;
+    transform: scale(2) rotate(58.27deg);
+}
+.blur-hero2{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -88px;
+    top: 238px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
 .hero-blur{
     position: absolute;
     width: 303.18px;
@@ -143,7 +161,7 @@
 #line-hero{
     position: absolute;
     top: 259px;
-    left: -117;
+    left: -117px;
 }
 /* end hero */
 
@@ -239,6 +257,17 @@
 }
 
 /* market float  */
+#blur-market{
+    position: absolute;
+    width: 429.82px;
+    height: 648.17px;
+    transform: scale(2) rotate(109.58deg);
+    left: -410px;
+    top: 178px;
+}
+
+
+
 .market-blur{
     position: absolute;
     width: 429.82px;
@@ -443,6 +472,18 @@
 }
 
 /* float crypto  */
+#blur-crypt{
+    position: absolute;
+    width: 433.08px;
+    height: 653.09px;
+    right: -393px;
+    top: -187px;
+    transform: scale(2) rotate(109.58deg);
+}
+
+
+
+
 .top-crypto-blur{
     position: absolute;
     width: 433.08px;
@@ -611,6 +652,19 @@
     top: 439px;
     right: -190px;
 }
+#buy-crypt{
+    position: absolute;
+    width: 511.89px;
+    height: 589.78px;
+    left: -460px;
+    top: 313px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
+
+
+
 .buy-blur{
     position: absolute;
     width: 511.89px;
@@ -765,6 +819,25 @@
 }
 
 /* float guide  */
+#blur-guide1{
+    position: absolute;
+    width: 236.93px;
+    height: 561px;
+    right: -211px;
+    top: 60px;
+    transform: scale(2) rotate(58.27deg);
+}
+#blur-guide2{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    right: 0;
+    top: 204px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
+
 .guide-blur{
     position: absolute;
     width: 236.93px;
@@ -883,6 +956,27 @@
     top: -85px;
     left: -88px;
 }
+#blur-start1{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -71px;
+    top: 89px;
+    transform: scale(2) rotate(58.27deg);
+}
+#blur-start2{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -389px;
+    top: 128px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
+
+
+
 .start-blur{
     position: absolute;
     width: 303.18px;
@@ -1126,7 +1220,7 @@
         flex: unset;
     }
     .wrapper-input > div > div > select{
-        background-position-x: 100px;
+        background-position-x: 83px;
     }
     .input-elem{
         padding: 15px 11px;

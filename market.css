@@ -45,13 +45,12 @@
     font-size: 16px;
     line-height: 100%;
     text-align: center;
-    /* color: #FFF2EE; */
     background: transparent;
     border: unset;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
-
+    
     width: 162px;
     height: 54px;
     border-radius: 15px;
@@ -60,10 +59,11 @@
     background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
-
+    
     transition: all 200ms ease-out;
 }
 .market-btn-buy:hover{
+    color: #FFF2EE;
     background: rgb(90,190,223);
     background: linear-gradient(65deg, rgba(90,190,223,1) 0%, rgba(221,168,91,1) 100%);
 }

@@ -225,6 +225,33 @@
 }
 
 /* float nav  */
+#nav-blur{
+    position: absolute;
+    width: 303px;
+    height: 561px;
+    top: -138px;
+    left: -260px;
+    transform: scale(2) rotate(58.27deg);
+}
+.nav-blur{
+    position: absolute;
+    width: 303px;
+    height: 561px;
+    top: -138px;
+    left: -260px;
+    transform: scale(2) rotate(58.27deg);
+}
+#nav-blur-day3{
+    position:absolute;
+    width: 476.64px;
+    height: 688.74px;
+    right: -342px;
+    top: -479px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
+
 .blur-nav{
     position: absolute;
     width: 303px;

@@ -224,10 +224,15 @@ $(document).ready(function(){
         }
 
         const labels = [
-            'January',
-            'February',
-            'March',
-            'April',
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
         ];
         const data = {
             labels: labels,
@@ -245,7 +250,7 @@ $(document).ready(function(){
                 },
                 pointBackgroundColor: 'rgb(255, 255, 255, 0)',
                 pointBorderWidth: 0,
-                data: [0, 10, 5, 2, ],
+                data: [0, 20, 5, 15, 30, 10, 50, 25, 40],
                 fill: true,
             }],
         };

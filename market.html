@@ -26,16 +26,21 @@
 </head>
 <body>
     <div id="navbar">
-        <div class="container nav-wrapper above-grain">
+        <div class="container">
             <span class="wrapper-float">
-                <div class="blur-nav night"></div>
-                <div class="blur-nav day1 day"></div>
-                <div class="blur-nav day2 day"></div>
-                <div id="blur-nav-day" class="day"></div>
+
+                <img class="nav-blur day" src="assets/floating/blur_nav_day1.svg"/>
+                <img class="nav-blur day" src="assets/floating/blur_nav_day2.svg"/>
+                <img id="nav-blur-day3" class="day" src="assets/floating/blur_nav_day3.svg"/>
+                
+                <img id="nav-blur" class="night" src="assets/floating/blur_nav.svg"/>
                 <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
                 <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
                 <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
             </span>
+        </div>
+        <div class="container nav-wrapper above-grain">
+            
 
             <a href="index.html">
                 <img class="invert" src="assets/logo.svg">
@@ -189,6 +194,7 @@
             </div>
         </div>
     </div>
+
 
     <div id="market">
         <div class="container above-grain">
@@ -883,10 +889,15 @@
         }
 
         const labels = [
-            'January',
-            'February',
-            'March',
-            'April',
+            '1',
+            '2',
+            '3',
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
         ];
         const data = {
             labels: labels,
@@ -904,7 +915,7 @@
                 },
                 pointBackgroundColor: 'rgb(255, 255, 255, 0)',
                 pointBorderWidth: 0,
-                data: [0, 10, 5, 2, ],
+                data: [0, 20, 5, 15, 30, 10, 50, 25, 40],
                 fill: true,
             }],
         };

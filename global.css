@@ -80,7 +80,7 @@ body::before{
     z-index: unset;
     position: unset;
 
-    display: none;
+    /* display: none; */
 }
 .container{
     position: relative;

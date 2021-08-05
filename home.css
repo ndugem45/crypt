@@ -257,7 +257,7 @@
 }
 
 /* market float  */
-#blur-market{
+.blur-market{
     position: absolute;
     width: 429.82px;
     height: 648.17px;
@@ -472,7 +472,7 @@
 }
 
 /* float crypto  */
-#blur-crypt{
+.blur-crypt{
     position: absolute;
     width: 433.08px;
     height: 653.09px;
@@ -652,7 +652,7 @@
     top: 439px;
     right: -190px;
 }
-#buy-crypt{
+.buy-crypt{
     position: absolute;
     width: 511.89px;
     height: 589.78px;
@@ -819,7 +819,7 @@
 }
 
 /* float guide  */
-#blur-guide1{
+.blur-guide1{
     position: absolute;
     width: 236.93px;
     height: 561px;
@@ -827,7 +827,7 @@
     top: 60px;
     transform: scale(2) rotate(58.27deg);
 }
-#blur-guide2{
+.blur-guide2{
     position: absolute;
     width: 303.18px;
     height: 561px;
@@ -956,7 +956,7 @@
     top: -85px;
     left: -88px;
 }
-#blur-start1{
+.blur-start1{
     position: absolute;
     width: 303.18px;
     height: 561px;
@@ -964,7 +964,7 @@
     top: 89px;
     transform: scale(2) rotate(58.27deg);
 }
-#blur-start2{
+.blur-start2{
     position: absolute;
     width: 303.18px;
     height: 561px;

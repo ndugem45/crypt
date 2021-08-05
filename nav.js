@@ -1,22 +1,11 @@
 function toggleMobileMenu(p){
-    document.querySelector('#wrapper-mobile-menu').classList.toggle("show")
     document.querySelector('body').classList.toggle("fixScroll")
     p.classList.toggle("on")
+    $("#wrapper-mobile-menu").slideToggle('fast')
 }
 
 function toggleDropdown(e){
-    
-    var d = document.querySelector('.dropdown-wrapper')
-    
-    d.classList.toggle("show")
-
-    setTimeout(()=>{
-        if(d.style.maxHeight){
-            d.style.maxHeight = null
-        }else{
-            d.style.maxHeight = `${d.scrollHeight+32}px`
-        }
-    },50)
+    $(".dropdown-wrapper").slideToggle()
 }
 
 function togglePanel(e){

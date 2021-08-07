@@ -1,0 +1,481 @@
+/* section 1 */
+#section1{
+    margin-top: 90px;
+    margin-bottom: 140px;
+}
+#section1 > .container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#section1 > .container:first-child{
+    margin-bottom: 96px;
+}
+#section1 > .container > h1{
+    width: 40%;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    margin: unset;
+}
+#section1 > .container > p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    margin: unset;
+    width: 46%;
+}
+.apply-box{
+    max-width: 830px;
+    padding: 61px 48px;
+    border-radius: 30px;
+    background-color: var(--market-bg);
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apply-box > p{
+    width: 62%;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+}
+.apply-btn{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    width: 188px;
+    height: 62px;
+    position: relative;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+.apply-btn::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    filter: blur(25px);
+}
+/* end section 1 */
+
+
+/* section 2 */
+#section2{
+    margin-bottom: 212px;
+    overflow: hidden;
+}
+#section2 > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+}
+.section2-heading{
+    margin: unset;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 95px;
+}
+.section2-divider{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin-bottom: 48px;
+}
+.section2-divider > label{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+}
+.section2-divider > div{
+    width: 85%;
+    position: absolute;
+    border-bottom: 1px solid #8C8691;
+    right: -100px;
+}
+.section2-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.section2-content{
+    width: 50%;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+}
+.section2-content > img{
+    width: 77px;
+    height: 77px;
+}
+.section2-content > label{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+.section2-content > ul{
+    margin: unset;
+    padding-left: 25px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+}
+/* end section 2  */
+
+/* section 3  */
+#section3{
+    margin-bottom: 148px;
+}
+.section3-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+}
+.section3-heading > h1{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    margin: unset;
+    width: 470px;
+}
+.section3-heading > p{
+    margin: unset;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    width: 386px;
+}
+.section3-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section3-itm{
+    width: 350px;
+    min-height: 500px;
+    background: var(--market-bg);
+    border-radius: 30px;
+    padding: 56px 32px;
+    margin: 0 13px;
+    margin-bottom: 32px;
+}
+.section3-itm > h2{
+    text-align: center;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    padding: 0 20px;
+}
+.section3-itm > .divider{
+    border-bottom: 3px solid #F8F7FC;
+    width: 51px;
+    display: block;
+    margin: auto;
+    margin-bottom: 42px;
+}
+.section3-itm > ul{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    margin: unset;
+}
+.section3-itm > ul > li > ul{
+    padding-left: 20px;
+}
+.section3-itm > .wrapper-social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section3-itm > .wrapper-social > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.section3-itm > .wrapper-social > div > img{
+    margin-right: 8px;
+    width: 24px;
+}
+.section3-btn{
+    display: block;
+    margin: auto;
+    margin-top: 32px;
+    width: 230px;
+    height: 62px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    position: relative;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+.section3-btn::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    filter: blur(25px);
+}
+/* end section 3 */
+
+
+/* section 4  */
+#section4{
+    margin-bottom: 140px;
+}
+#section4 > .container{
+    display: flex;
+    justify-content: center;
+}
+.section4-wrapper{
+    width: 50%;
+}
+.section4-wrapper:last-child{
+    padding-left: 97px
+}
+.section4-wrapper > h3{
+    font-family: 'Sora';
+    font-size: 24px;
+    line-height: 130%;
+    margin: unset;
+}
+.section4-form{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.section4-label{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+.section4-input{
+    padding: 18px 32px;
+    width: 470px;
+    height: 59px;
+    background: #F8F7FC;
+    border-radius: 15px;
+    border: unset;
+    appearance: none;
+    color: black;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.section4-check{
+    margin-top: 11px;
+}
+.section4-check > label{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+.section4-form-btn{
+    margin-top: 40px;
+    width: 270px;
+    height: 62px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    position: relative;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+.section4-form-btn::after,
+.section4-btn::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    filter: blur(25px);
+}
+.section4-wrapper > h1{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    margin: unset;
+    margin-top: 32px;
+}
+.section4-user{
+    display: flex;
+    margin: 48px 0;
+    align-items: center;
+}
+.section4-user > img{
+    width: 70px;
+    height: 70px;
+    background: #C4C4C4;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+.section4-user > div{
+    display: flex;
+    flex-direction: column;
+}
+.section4-user > div > span:first-child{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+.section4-user > div > span:last-child{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+.section4-btn{
+    width: 230px;
+    height: 62px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    position: relative;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+/* end section 4  */
+
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+    /* ini  */
+}
+@media all and (max-width: 1000px){
+    /* ini  */
+}
+@media all and (max-width: 994px){
+    /* ini  */
+}
+@media all and (max-width: 768px){
+    .section3-wrapper{
+        display: none;
+    }
+    #section4 > .container{
+        flex-direction: column;
+    }
+    .section4-wrapper{
+        width: 100%;
+    }
+    .section4-wrapper:last-child{
+        padding-left: unset;
+        margin-top: 88px;
+    }
+}
+@media all and (max-width: 568px){
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
+}

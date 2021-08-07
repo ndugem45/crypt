@@ -226,3 +226,50 @@
     transform: scale(2) rotate(109.58deg);
 }
 /* end why float  */
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    .wrapper-feature,
+    .wrapper-why{
+        flex-direction: column;
+    }
+    .feature-item,
+    .why-item{
+        width: 100%;
+    }
+    .feature-item{
+        margin: unset;
+        margin-bottom: 40px;
+    }
+    .why-item{
+        margin-bottom: 48px;
+    }
+    .market-table{
+        display: none;
+    }
+}
+@media all and (max-width: 568px){
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
+}

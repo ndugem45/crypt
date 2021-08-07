@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				
+
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="startup.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container">
+            <span class="wrapper-float">
+
+                <img class="nav-blur day" src="assets/floating/blur_nav_day1.svg"/>
+                <img class="nav-blur day" src="assets/floating/blur_nav_day2.svg"/>
+                <img id="nav-blur-day3" class="day" src="assets/floating/blur_nav_day3.svg"/>
+                
+                <img id="nav-blur" class="night" src="assets/floating/blur_nav.svg"/>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
+            </span>
+        </div>
+        <div class="container nav-wrapper above-grain">
+            
+
+            <a href="index.html">
+                <img class="invert" src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a class="btn-hover" href="index.html">
+                    Home
+                </a>
+                <a class="btn-hover" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="btn-hover" href="market.html">
+                    Markets
+                </a>
+                <a class="btn-hover" href="learn.html">
+                    Learn
+                </a>
+                <a class="btn-hover" href="">
+                    Forum
+                </a>
+                <a class="btn-hover" href="">
+                    Blog
+                </a>
+                <a class="btn-hover" href="contact.html">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div class="btn-hover">
+                    Download
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    English
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    USD
+                </div>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off invert" src="assets/Vector.svg"/>
+                    <img class="on invert" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img class="invert" src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <a class="plain" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="plain" href="market.html">
+                    Markets
+                </a>
+                <a class="plain" href="learn.html">
+                    Learn
+                </a>
+                <a class="plain" href="">
+                    Forum
+                </a>
+                <a class="plain" href="">
+                    Blog
+                </a>
+                <a class="plain" href="contact.html">
+                    Support
+                </a>
+
+                <a href="">
+                    Download
+                </a>
+                <a href="">
+                    English
+                </a>
+                <a href="">
+                    USD
+                </a>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="section1">
+        <div class="container above-grain">
+            <h1>
+                Startup launch program on Bytedex
+            </h1>
+            <p>
+                Bytedex offers you to start entering crypto business with our ultimate Startup Launch Program
+                <br>
+                <br>
+                As your advising partner, our Team will use all of the gained experience to help you with the development of the project
+            </p>
+        </div>
+        <div class="container above-grain">
+            <div class="apply-box">
+                <p>
+                    Take the smart way to develop your project.
+                    Let's get started now!
+                </p>
+                <button class="apply-btn">
+                    Apply
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="section2">
+        <div class="container above-grain">
+            <h1 class="section2-heading">
+                Our Team will work with your project in 4 directions
+            </h1>
+            <div class="section2-divider">
+                <label>
+                    ZERO CHARGE
+                </label>
+                <div></div>
+            </div>
+            <div class="section2-wrapper">
+                <div class="section2-content">
+                    <img class="invert" src="assets/section2-ico-1.svg"/>
+                    <label>
+                        Setup
+                    </label>
+                    <ul>
+                        <li>
+                            Social Media setup
+                        </li>
+                        <li>
+                            Filling information about the project
+                        </li>
+                    </ul>
+                </div>
+                <div class="section2-content">
+                    <img class="invert" src="assets/section2-ico-2.svg"/>
+                    <label>
+                        Launch
+                    </label>
+                    <ul>
+                        <li>
+                            Fundraising stage
+                        </li>
+                        <li>
+                            Trial for key Bytedex services
+                        </li>
+                        <li>
+                            Constant assistance of Business Development Team
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section2-divider">
+                <label>
+                    SERVICE COST
+                </label>
+                <div></div>
+            </div>
+            <div class="section2-wrapper">
+                <div class="section2-content">
+                    <img class="invert"src="assets/section2-ico-3.svg"/>
+                    <label>
+                        Platform Integration
+                    </label>
+                    <ul>
+                        <li>
+                            Integration into Bytedex Platform
+                        </li>
+                    </ul>
+                </div>
+                <div class="section2-content">
+                    <img class="invert" src="assets/section2-ico-4.svg"/>
+                    <label>
+                        Project Development
+                    </label>
+                    <ul>
+                        <li>
+                            Internal Bytedex promo
+                        </li>
+                        <li>
+                            Promo for external crypto Community AMA session
+                        </li>
+                        <li>
+                            Retrospective analysis
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section3">
+        <div class="container above-grain">
+            <div class="section3-heading">
+                <h1>
+                    Stages of Startup Launch Program on Bytedex exchange
+                </h1>
+                <p>
+                    All steps are thoroughly planned and logically follow one another for an effective start and development of your project
+                </p>
+            </div>
+            <div class="section3-wrapper">
+                <div class="section3-itm">
+                    <h2>
+                        Social Media setup and fulfillment
+                    </h2>
+                    <div class="divider"></div>
+                    <div class="wrapper-social">
+                        <div>
+                            <img src="assets/facebook.svg"/>
+                            Facebook
+                        </div>
+                        <div>
+                            <img src="assets/facebook.svg"/>
+                            Facebook
+                        </div>
+                        <div>
+                            <img src="assets/facebook.svg"/>
+                            Facebook
+                        </div>
+                        <div>
+                            <img src="assets/facebook.svg"/>
+                            Facebook
+                        </div>
+                        <div>
+                            <img src="assets/facebook.svg"/>
+                            Facebook
+                        </div>
+                        <div>
+                            <img src="assets/facebook.svg"/>
+                            Facebook
+                        </div>
+                    </div>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        External promotion in Social Media
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            Email marketing campaign to crypto enthusiasts/ investors
+                        </li>
+                        <li>
+                            Private messaging to crypto enthusiasts/ investors in Telegram and WhatsApp
+                        </li>
+                        <li>
+                            Advertising posts in Reddit, Twitter, Telegram crypto accounts
+                        </li>
+                        <li>
+                            Inviting users to Telegram group, Facebook, Twitter
+                        </li>
+                    </ul>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        AMA 
+                        <br>session
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            Interaction with Bytedex Community in live chat
+                        </li>
+                        <li>
+                            Getting first engaged users for your project
+                        </li>
+                    </ul>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        Internal Bytedex 
+                        <br>promo
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            Announcements in official Bytedex Social Media - Facebook, Twitter, 2 Telegram channels
+                        </li>
+                        <li>
+                            Announcements on the exchange website
+                        </li>
+                        <li>
+                            Email marketing campaign for registered Bytedex users
+                        </li>
+                    </ul>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        Launchpad
+                        <br>stage
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            You have a chance to launch token sale during the Launchpad stage where your initial Community may get your tokens/ coins before listing
+                        </li>
+                    </ul>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        Integration into Bytedex Platform
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            Our Team works with most of the existing blockchain technologies
+                        </li>
+                        <li>
+                            ERC-20, TRON, EOS, EDC, NEO, NEM, BNB, XLM, WAWES may be listed less than 3 days
+                        </li>
+                        <li>
+                            Any custom blockchain is topic for discussion
+                        </li>
+                    </ul>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        Trial for key Bytedex services
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            Choose trial version for key services to check their efficiency for your project :
+                            <ul>
+                                <li>
+                                    ultimate referral conditions
+                                </li>
+                                <li>
+                                    referral game
+                                </li>
+                                <li>
+                                    banner’s design
+                                </li>
+                                <li>
+                                    trial liquidity services
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section3-itm">
+                    <h2>
+                        Retrospective analysis
+                    </h2>
+                    <div class="divider"></div>
+                    <ul>
+                        <li>
+                            Evaluation of results is key to understand correctness of the chosen path
+                        </li>
+                        <li>
+                            Business Development Manager will help you to correctly evaluate the achieved result and advise you with further steps
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="section3-btn">
+                Discuss the price
+            </button>
+        </div>
+    </div>
+
+    <style>
+       
+    </style>
+    <div id="section4">
+        <div class="container above-grain">
+            <div class="section4-wrapper">
+                <h3>
+                    Still Have a Question
+                </h3>
+                <div class="section4-form">
+                    <label class="section4-label">
+                        Enter your telegram user name
+                    </label>
+                    <input class="section4-input" placeholder="Telegram username here" type="text"/>
+                    <label class="section4-label">
+                        Enter your project name
+                    </label>
+                    <input class="section4-input" placeholder="Project name here" type="text"/>
+                    <label class="section4-label">
+                        Enter your email
+                    </label>
+                    <input class="section4-input" placeholder="Email name here" type="text"/>
+                    <div class="section4-check">
+                        <input type="checkbox" name="tos" value="tos">
+                        <label for="tos"> I agree to the Terms of Use and Privacy Policy</label>
+                    </div>
+                    <button class="section4-form-btn">
+                        Get a free consultant
+                    </button>
+                </div>
+            </div>
+            <div class="section4-wrapper">
+                <h1>
+                    Apply for 
+                    <br>Startup Launch 
+                    <br>Program
+                </h1>
+                <div class="section4-user">
+                    <img src=""/>
+                    <div>
+                        <span>
+                            Manager Name
+                        </span>
+                        <span>
+                            Listing Manager
+                        </span>
+                    </div>
+                </div>
+                <button class="section4-btn">
+                    Contact Us
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img class="invert" src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

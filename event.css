@@ -63,7 +63,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
-    color: black;
+    color: #1B0820;
     padding: 8px 12px;
 }
 .section1-itm-his{
@@ -87,3 +87,50 @@
     line-height: 130%;
 }   
 /* end section 1 */
+
+
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    #section1 > .container > h1{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+    }
+    #section1 > .container > label{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        padding: 0 10%;
+    }
+    .section1-itm{
+        width: 100%;
+    }
+}
+@media all and (max-width: 568px){
+
+
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
+}

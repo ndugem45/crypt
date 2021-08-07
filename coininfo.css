@@ -44,7 +44,8 @@
     border: unset;
     background: transparent;
 }
-.section1-tab-btn{
+.section1-tab-btn,
+.label-m{
     display: flex;
     font-family: 'Sora';
     font-style: normal;
@@ -52,6 +53,9 @@
     font-size: 24px;
     line-height: 100%;
     margin-bottom: 116px;
+}
+.label-m{
+    display: none;
 }
 .section1-tab-btn > label{
     margin-right: 16px;
@@ -72,7 +76,7 @@
     content: '';
     position: absolute;
     width: 40%;
-    bottom: -8px;
+    bottom: -12px;
     left: 30%;
     height: 4px;
     background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
@@ -111,3 +115,57 @@
     text-align: center;
 }
 /* end section 1 */
+
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    .section1-heading{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .section1-tab-btn > div,
+    .label-m{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .section1-tab-btn > label{
+        display: none;
+    }
+    .label-m{
+        margin-bottom: 16px;
+        display: block;
+    }
+    .section1-itm{
+        margin: 0 10px;
+        margin-bottom: 64px;
+    }
+}
+@media all and (max-width: 568px){
+
+
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
+}

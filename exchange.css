@@ -264,6 +264,26 @@
     .market-table{
         display: none;
     }
+    #feature > .container > h1,
+    #market > .container > h1,
+    #why > .container > h1{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 40px;
+    }
+    #feature > .container > h1{
+        padding: 0 50px;
+    }
+    .feature-item > p{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        width: 247px;
+    }
+    .feature-item > img{
+        width: 80px;
+    }
 }
 @media all and (max-width: 568px){
 }

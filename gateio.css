@@ -1,0 +1,282 @@
+/* section 1 */
+.section1-search{
+    margin: auto;
+    margin-bottom: 67px;
+    width: 100%;
+    max-width: 770px;
+    height: 62px;
+    background: #F8F7FC;
+    border-radius: 15px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+}
+.section1-search > input{
+    font-family: 'Sora';
+    color:black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    flex:1;
+    margin-left: 16px;
+    appearance: none;
+    height: 80%;
+    border: unset;
+    background: transparent;
+}
+#section1{
+    margin-top: 64px;
+    margin-bottom: 140px;
+}
+#section1 > .container > h1{
+    margin: unset;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+}
+#section1 > .container > p{
+    margin: unset;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    padding: 0 88px;
+}
+#section1 > .container > h3{
+    margin: unset;
+    margin-bottom: 56px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+}
+.section1-tab{
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1-tab > div{
+    display: flex;
+}
+.section1-tab > div > div{
+    margin-right: 48px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+}
+.section1-tab > div > div.active{
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section1-tab > div > div.active::after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    bottom: -12px;
+    left: 30%;
+    height: 4px;
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+}
+.section1-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section1-tab > button{
+    width: 196px;
+    height: 62px;
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    position: relative;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+.section1-tab > button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    filter: blur(25px);
+}
+.section1-itm{
+    background: var(--market-bg);
+    padding: 16px;
+    border-radius: 30px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+.section1-itm > img{
+    background: #EBEBEB;
+    border-radius: 30px;
+    max-width: 338px;
+    width: 100%;
+    height: 226px;
+    margin-bottom: 32px;
+}
+.section1-title{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.section1-label{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+}
+.section1-label > div{
+    display: flex;
+    flex-direction: column;
+}
+.section1-label > div > span:first-child{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+.section1-label > div > span:last-child{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+.section-1-detail{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+}
+.section1-itm > label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #0D0417;
+    background: #FFFFFF;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 24px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+.section1-progress{
+    margin-bottom: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+}
+.section1-progress > div{
+    width: 50%;
+    height: 15px;
+    margin-right: 16px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+/* end section 1 */
+
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    #section1 > .container > h1{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    #section1 > .container > p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 180%;
+        padding: unset;
+    }
+    .section1-tab{
+        flex-direction: column;
+    }
+    .section1-tab > div > div{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        margin-right: 20px;
+    }
+    .section1-tab > button{
+        margin-top: 50px;
+    }
+    #section1 > .container > h3{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+@media all and (max-width: 568px){
+
+
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
+}

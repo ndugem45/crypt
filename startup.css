@@ -472,6 +472,52 @@
     }
 }
 @media all and (max-width: 568px){
+    #section1 > .container:first-child,
+    .apply-box,
+    .section2-wrapper,
+    .section3-heading{
+        flex-direction: column;
+    }
+    #section1 > .container > h1,
+    #section1 > .container > p,
+    .apply-box > p,
+    .section2-heading,
+    .section2-content,
+    .section3-heading > h1,
+    .section4-input{
+        width: 100%;
+    }
+    #section1 > .container > h1,
+    .section4-wrapper > h1{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+    }
+    #section2 > .container{
+        padding: 0 20px;
+    }
+    .section2-heading,
+    .section3-heading > h1{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 130%;
+    }
+    .section2-divider > label{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .apply-box{
+        padding: 61px 20px;
+    }
+    .apply-box > p{
+        text-align: center;
+    }
+    #section1 > .container > h1,
+    .apply-box > p,
+    .section3-heading > h1{
+        margin-bottom: 32px;
+    }
 }
 
 @media all and (max-width: 430px){

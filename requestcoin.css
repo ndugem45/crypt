@@ -1,0 +1,124 @@
+/* section 1 */
+#section1{
+    margin-top: 64px;
+    margin-bottom: 140px;
+}
+#section1 > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section1 > .container > h1{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    padding: 0 25%;
+    text-align: center;
+}
+#section1 > .container > label{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 88px;
+}
+.section1-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.section1-wrapper > a{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+
+    margin: 0 15px;
+
+    max-width: 470px;
+    width: 100%;
+    height: 132px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    background: transparent;
+    border: unset;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    border-radius: 15px;
+    position: relative;
+    background: var(--market-bg);
+
+    /* transition: all 200ms ease-out; */
+}
+.section1-wrapper > a:first-child{
+    background: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+/* end section 1 */
+
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    .section1-wrapper{
+        flex-direction: column;
+    }
+    .section1-wrapper > a{
+        margin: unset;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 180%;
+        height: 128px;
+    }
+    #section1 > .container > h1{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        padding: 0 10px;
+    }
+    #section1 > .container > label{
+        font-size: 18px;
+        line-height: 130%;
+    }
+}
+@media all and (max-width: 568px){
+
+
+}
+
+@media all and (max-width: 430px){
+}
+@media all and (max-width: 320px){
+    
+}

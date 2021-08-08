@@ -12,8 +12,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -473,6 +473,9 @@
                     </ul>
                 </div>
             </div>
+            <!-- <div class="slick-dots">
+                <div class="0"></div>
+            </div> -->
             <button class="section3-btn">
                 Discuss the price
             </button>
@@ -639,7 +642,7 @@
             if(detectMob()){
                 $('.section3-wrapper').slick({
                     arrows: false,
-                    dots: false,
+                    dots: true,
                     infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,

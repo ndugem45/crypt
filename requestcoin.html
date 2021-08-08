@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				
+
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="requestcoin.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container">
+            <span class="wrapper-float">
+
+                <img class="nav-blur day" src="assets/floating/blur_nav_day1.svg"/>
+                <img class="nav-blur day" src="assets/floating/blur_nav_day2.svg"/>
+                <img id="nav-blur-day3" class="day" src="assets/floating/blur_nav_day3.svg"/>
+                
+                <img id="nav-blur" class="night" src="assets/floating/blur_nav.svg"/>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
+            </span>
+        </div>
+        <div class="container nav-wrapper above-grain">
+            
+
+            <a href="index.html">
+                <img class="invert" src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a class="btn-hover" href="index.html">
+                    Home
+                </a>
+                <a class="btn-hover" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="btn-hover" href="market.html">
+                    Markets
+                </a>
+                <a class="btn-hover" href="learn.html">
+                    Learn
+                </a>
+                <a class="btn-hover" href="">
+                    Forum
+                </a>
+                <a class="btn-hover" href="">
+                    Blog
+                </a>
+                <a class="btn-hover" href="contact.html">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div class="btn-hover">
+                    Download
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    English
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    USD
+                </div>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off invert" src="assets/Vector.svg"/>
+                    <img class="on invert" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img class="invert" src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <a class="plain" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="plain" href="market.html">
+                    Markets
+                </a>
+                <a class="plain" href="learn.html">
+                    Learn
+                </a>
+                <a class="plain" href="">
+                    Forum
+                </a>
+                <a class="plain" href="">
+                    Blog
+                </a>
+                <a class="plain" href="contact.html">
+                    Support
+                </a>
+
+                <a href="">
+                    Download
+                </a>
+                <a href="">
+                    English
+                </a>
+                <a href="">
+                    USD
+                </a>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section1">
+        <div class="container above-grain">
+            <h1>
+                New Coin Listing Request
+            </h1>
+            <label>
+                Type
+            </label>
+            <div class="section1-wrapper">
+                <a>
+                    Application by Project Team
+                </a>
+                <a>
+                    Application by User
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img class="invert" src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

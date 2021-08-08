@@ -3,7 +3,7 @@ function counterSlide(index){
     indicator.innerText = `${index+1}/5`
 }
 function dotClear(index){
-    var child = document.querySelector('.slick-dots').children
+    var child = document.querySelector('.slick-dot').children
     var childSlide = document.querySelector('.slider-crypto > .slick-list > .slick-track').children
     var target = {
         order: document.querySelector('.active-slider-block > .active > h2'),
@@ -41,6 +41,141 @@ $("input[data-type='currency']").on({
     formatCurrency($(this), "blur");
     }
 });
+
+var sample = {
+    "prices": [
+      [
+        1625875200000,
+        33971.297749757956
+      ],
+      [
+        1625961600000,
+        33704.53847440508
+      ],
+      [
+        1626048000000,
+        34299.938016517444
+      ],
+      [
+        1626134400000,
+        33262.6543524462
+      ],
+      [
+        1626220800000,
+        32676.38380096018
+      ],
+      [
+        1626307200000,
+        32878.50187357147
+      ],
+      [
+        1626393600000,
+        31726.038833909817
+      ],
+      [
+        1626480000000,
+        31399.653128682126
+      ],
+      [
+        1626566400000,
+        31588.6713510167
+      ],
+      [
+        1626652800000,
+        31919.393922554555
+      ],
+      [
+        1626739200000,
+        30928.211908849244
+      ],
+      [
+        1626825600000,
+        29971.903783612062
+      ],
+      [
+        1626912000000,
+        32383.78112696872
+      ],
+      [
+        1626998400000,
+        32409.499767175417
+      ],
+      [
+        1627084800000,
+        33455.55127272261
+      ],
+      [
+        1627171200000,
+        34213.59993217662
+      ],
+      [
+        1627257600000,
+        35456.124660766836
+      ],
+      [
+        1627344000000,
+        37281.91809217662
+      ],
+      [
+        1627430400000,
+        39076.59377063225
+      ],
+      [
+        1627516800000,
+        40031.19824444798
+      ],
+      [
+        1627603200000,
+        39977.75693922764
+      ],
+      [
+        1627689600000,
+        41936.261478677225
+      ],
+      [
+        1627776000000,
+        41754.16660435275
+      ],
+      [
+        1627862400000,
+        39914.82975848789
+      ],
+      [
+        1627948800000,
+        39278.766508103676
+      ],
+      [
+        1628035200000,
+        38368.35401197897
+      ],
+      [
+        1628121600000,
+        39751.58457509862
+      ],
+      [
+        1628208000000,
+        40825.381940449704
+      ],
+      [
+        1628294400000,
+        42802.13717474142
+      ],
+      [
+        1628380800000,
+        44647.57760300116
+      ],
+      [
+        1628425944000,
+        44883.43757532382
+      ]
+    ]
+  }
+
+  var tmp = [];
+  sample.prices.forEach((s)=>{
+    tmp.push(s[1])
+  })
+
 
 
 
@@ -205,6 +340,16 @@ $(document).ready(function(){
             },
         ]
     });
+    $('.market-table-mobile').slick({
+        arrows: false,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        centerMode: true,
+        speed: 200,
+    });
 
         let width, height, gradient;
         var c = 5
@@ -235,7 +380,7 @@ $(document).ready(function(){
             '9',
         ];
         const data = {
-            labels: labels,
+            labels: tmp,
             datasets: [{
                 borderColor: 'rgb(255, 179, 68, 0.5)',
                 backgroundColor: function(context) {
@@ -250,7 +395,7 @@ $(document).ready(function(){
                 },
                 pointBackgroundColor: 'rgb(255, 255, 255, 0)',
                 pointBorderWidth: 0,
-                data: [0, 20, 5, 15, 30, 10, 50, 25, 40],
+                data: tmp,
                 fill: true,
             }],
         };

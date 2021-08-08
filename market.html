@@ -559,6 +559,11 @@
                 </table>
             </div>
 
+            <div class="section1-search">
+                <img src="assets/Search.svg"/>
+                <input placeholder="Search" type="text"/>
+            </div>
+
             <div class="market-table-mobile">
                 <div class="market-mobile-item">
                     <div class="top">
@@ -578,8 +583,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-1" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-1" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -599,8 +607,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-2" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-2" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -620,8 +631,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-3" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-3" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -641,8 +655,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-4" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-4" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -662,8 +679,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-5" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-5" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -683,8 +703,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-6" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-6" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -704,8 +727,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-7" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-7" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -725,8 +751,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-8" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-8" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -746,8 +775,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-9" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-9" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 <div class="market-mobile-item">
                     <div class="top">
@@ -767,8 +799,11 @@
                     </div>
                     <div class="mid">
                         <span>Chart</span>
-                        <canvas class="myChartm-10" width="162" height="56" style="z-index: -1;"></canvas>
+                        <canvas class="myChartm-10" width="94" height="33" style="z-index: -1;"></canvas>
                     </div>
+                    <button class="market-btn-buy">
+                        Buy/Sell
+                    </button>
                 </div>
                 
             </div>
@@ -960,6 +995,19 @@
                     document.querySelector(n+(i+1)),
                     config
                 ))
+            }
+
+            if(detectMob()){
+                $('.market-table-mobile').slick({
+                    arrows: false,
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: true,
+                    speed: 200,
+                    centerMode: true,
+                });
             }
         });
     </script>

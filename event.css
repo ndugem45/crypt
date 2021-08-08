@@ -147,6 +147,9 @@
         font-size: 10px;
         line-height: 100%;
     }
+    .section1-wrapper{
+        justify-content: center;
+    }
 }
 @media all and (max-width: 568px){
 

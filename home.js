@@ -352,7 +352,7 @@ $(document).ready(function(){
     });
 
         let width, height, gradient;
-        var c = 5
+        var c = 10
         var cha = []
         function getGradient(ctx, chartArea) {
             const chartWidth = chartArea.right - chartArea.left;

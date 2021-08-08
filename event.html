@@ -662,7 +662,20 @@
 
     <script type="text/javascript" src="nav.js"></script>
     <script>
-        
+        $(document).ready(function(){
+            if(detectMob()){
+                $('.section1-wrapper').slick({
+                    arrows: false,
+                    dots: false,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: true,
+                    speed: 200,
+                    centerMode: true,
+                });
+            }
+        });
     </script>
 </body>
 </html>

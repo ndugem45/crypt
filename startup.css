@@ -457,8 +457,11 @@
     /* ini  */
 }
 @media all and (max-width: 768px){
-    .section3-wrapper{
+    /* .section3-wrapper{
         display: none;
+    } */
+    .section3-itm{
+        width: 320px;
     }
     #section4 > .container{
         flex-direction: column;

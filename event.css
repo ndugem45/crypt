@@ -121,7 +121,31 @@
         padding: 0 10%;
     }
     .section1-itm{
-        width: 100%;
+        width: 236px;
+        margin: 0 15px;
+    }
+    .section1-itm > img{
+        height: 206px;
+    }
+    .section1-itm-title > span{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .section1-itm-his > span:last-child{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .section1-itm-his > span:first-child{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+    }
+    .section1-itm-title > label{
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 100%;
     }
 }
 @media all and (max-width: 568px){

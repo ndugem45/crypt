@@ -32,7 +32,7 @@
     margin-bottom: unset;
     font-family: 'Sora';
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 130%;
     text-align: left;
     /* color: #F8F7FC; */
@@ -236,7 +236,8 @@
 .spect-blur-1{
     position: absolute;
     width: 433.08px;
-    height: 653.09px;
+    /* height: 653.09px; */
+    height: 490px;
     right: -528px;
     top: 443px;
     transform: scale(2) rotate(109.58deg);
@@ -367,6 +368,11 @@
 }
 /* end market  */
 
+.colorfull-text{
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Mobile CSS */
 

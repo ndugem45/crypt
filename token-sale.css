@@ -400,9 +400,10 @@
     justify-content: center;
 }
 
-.tab > .tab-item {
+.tab > div {
     padding: 10px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .tab-indicator{
@@ -414,8 +415,20 @@
     cursor: pointer;
 }
 
-.tab > .active > .tab-indicator{
-    display: block;
+.tab > div.active{
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tab > div.active::after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    bottom: -12px;
+    left: 30%;
+    height: 4px;
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
 }
 
 .tab > .tab-item-active > .tab-indicator{

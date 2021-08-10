@@ -214,15 +214,12 @@
             <div class="tab">
                 <div id="actives" class="tab-item active" onclick="openCity(event, 'active')">
                     Active
-                    <hr class="tab-indicator" />
                 </div>
                 <div id="completes" class="tab-item" onclick="openCity(event, 'complete')">
                     Complete
-                    <hr class="tab-indicator" />
                 </div>
                 <div id="specialoffers" class="tab-item" onclick="openCity(event, 'specialoffer')">
                     Special Offer
-                    <hr class="tab-indicator" />
                 </div>
             </div>
         </div>
@@ -517,11 +514,15 @@
     </div>
     
     <div id="complete" class="tabcontent">
-        <h3>Complete</h3> 
+        <div class="container above-grain">
+            <h3>Complete Content</h3>
+        </div> 
     </div>
     
     <div id="specialoffer" class="tabcontent">
-        <h3>Special Offer</h3>
+        <div class="container above-grain">
+            <h3>Special Offer Content</h3>
+        </div> 
     </div>
 
     
@@ -627,6 +628,11 @@
     <script type="text/javascript" src="nav.js"></script>
     <script>
         $(document).ready(function(){
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            tabcontent[1].style.display = "none";
+            tabcontent[2].style.display = "none";
+
             $('.article-mobile').slick({
                     arrows: false,
                     dots: true,

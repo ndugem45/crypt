@@ -1,0 +1,487 @@
+/* feature  */
+#feature{
+    margin-top: 64px;
+    text-align: center;
+    margin-bottom: 78px;
+}
+#feature > .container > h1{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    /* color: #F8F7FC; */
+    margin: unset;
+    margin-bottom: 8px;
+}
+#feature > .container > p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* color: #F8F7FC; */
+    max-width: 610px;
+    margin: auto;
+    margin-bottom: 88px;
+}
+/* .heading-feature{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    margin: unset;
+    margin-bottom: 32px;
+    text-align: left;
+}
+.media-feature{
+    width: 100%;
+    height: 525px;
+    background: #EBEBEB;
+    border-radius: 30px;
+} */
+/* end feature  */
+
+/* popular  */
+/* #popular{
+    margin-bottom: 189px;
+}
+.heading-popular{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    margin: unset;
+    margin-bottom: 32px;
+    text-align: left;
+}
+.wrapper-popular{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popular-item{
+    width: 22%;
+    margin-right: 3%;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 48px;
+}
+.popular-item > label{
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 16px;
+} */
+/* end popular  */
+
+/* media  */
+#media > .top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 70px;
+}
+#media > .top > *{
+    width: 50%;
+}
+#media > .top > h1{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    /* color: #F8F7FC; */
+    margin: unset;
+}
+#media > .top > p{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    /* color: #F8F7FC; */
+    margin: unset;
+    padding-right: 115px;
+}
+
+/* #media > .mid{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 104px;
+    justify-content: space-between;
+}
+.media-mid-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.media-mid-item > img{
+    max-width: 158px;
+    max-height: 158px;
+    margin-right: 32px;
+}
+.media-mid-item > div{
+    display: flex;
+    flex-direction: column;
+}
+.media-mid-item > div > label{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+.media-mid-item > div > a{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+} */
+
+/* #media > .btm{
+    margin-bottom: 156px;
+    display: flex;
+    justify-content: space-between;
+}
+.btm-item{
+    width: 48%;
+}
+.btm-media{
+    max-width: 570px;
+    width: 100%;
+    height: 567px;
+    background: #EBEBEB;
+    border-radius: 30px;
+}
+.btm-heading{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin: unset;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.btm-detail{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    margin: unset;
+} */
+/* end media  */
+
+/* get start  */
+/* #get-start{
+    margin-bottom: 77px;
+}
+#get-start > .container{
+    background: var(--start-bg);
+    border-radius: 30px;
+    padding: 107px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#get-start > .container > h1{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    margin-top:unset;
+    margin-bottom: 40px;
+}
+#get-start > .container > a{
+    font-family: 'Sora';
+    padding: 22px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    position: relative;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+#get-start > .container > a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(25px);
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 100% 100%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to right, #9db39c, #5abedf), radial-gradient(circle at 0% 100%, transparent 13px, #5abedf 13px, #5abedf 16px, transparent 16px), linear-gradient(to bottom, #5abedf, #9db39c), radial-gradient(circle at 0% 0%, transparent 13px, #9db39c 13px, #9db39c 16px, transparent 16px), linear-gradient(to left, #9db39c, #dda85d), radial-gradient(circle at 100% 0%, transparent 13px, #dda85d 13px, #dda85d 16px, transparent 16px), linear-gradient(to top, #dda85d, #9db39c);
+    background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+} */
+
+/* float get start  */
+/* .blur-start1{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -71px;
+    top: 89px;
+    transform: scale(2) rotate(58.27deg);
+}
+.blur-start2{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -389px;
+    top: 128px;
+    transform: scale(2) rotate(58.27deg);
+}
+
+
+
+
+
+.start-blur{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -71px;
+    top: 89px;
+
+    background: #836C78;
+    filter: blur(300px);
+    transform: rotate(58.27deg);
+}
+.start-blur.day{
+    background: #F9F1E6;
+}
+.start-blur-2{
+    position: absolute;
+    width: 303.18px;
+    height: 561px;
+    left: -389px;
+    top: 128px;
+
+    background: rgba(115, 37, 192, 0.35);
+    filter: blur(300px);
+    transform: rotate(58.27deg);
+}
+.start-blur-2.day{
+    background: #EDE6D5;
+}
+#get-start > .wrapper-float{
+    position: relative;
+    margin:auto;
+    width:100%;
+    max-width: 1170px;
+    padding:0 21px;
+} */
+/* end get start  */
+
+/* article  */
+#article > .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+.article-item{
+    /* display: flex; */
+    width: 30%;
+    margin-bottom: 30px;
+}
+.article-item > img{
+    /* width: 270px; */
+    width: 100%;
+    height: 269px;
+    background: #EBEBEB;
+    border-radius: 30px;
+    object-fit: contain;
+    margin-right: 30px;
+}
+
+
+.article-item > div > label{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+.article-item > div > label > .label-name{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.article-item > div > label > .label-status{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #FE174F;
+
+    background: #F8F7FC;
+    border-radius: 30px;
+
+    padding: 7px 8px;
+}
+
+.separator{
+    border: 1px solid #8C8691;
+    margin: 10px 0;
+}
+
+.article-item > .time > .time-state{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 100%;
+}
+
+.article-item > .time > .date{
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+
+    margin-bottom: 10px;
+}
+
+.article-item > .listing {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 130%;
+
+    margin: 10px 0;
+}
+
+.article-item > .detail > div{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 180%;
+}
+
+/*.article-item > div > label{
+    font-family: 'Sora';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+.article-item > div > p{
+    margin: unset;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+} */
+/* end article  */
+
+/* Tab */
+#tabs{
+    margin-bottom: 20px;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+}
+
+.tab > .tab-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab-indicator{
+    display: none;
+}
+
+.tab > .tab-item-active {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab > .active > .tab-indicator{
+    display: block;
+}
+
+.tab > .tab-item-active > .tab-indicator{
+    display: block;
+    background-image: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+}
+
+/* Tab End */
+
+.mobile{
+    display: none;
+}
+.m-hide{
+    display: block;
+}
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+
+    #article > .container{
+        display: block;
+    }
+
+    .article-item{
+        /* display: flex; */
+        /* width: 80%; */
+        /* margin-bottom: 30px; */
+        width: 300px;
+        margin: 0 8px;
+        font-size: 14px;
+        line-height: 100%;
+    }
+    .article-item > img{
+        width: 100%;
+        height: 269px;
+    }
+
+    .mobile{
+        display: block;
+    }
+    .m-hide{
+        display: none;
+    }
+    
+}
+@media all and (max-width: 568px){
+}
+
+@media all and (max-width: 430px){
+    
+}
+@media all and (max-width: 320px){
+    
+}

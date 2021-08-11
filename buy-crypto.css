@@ -82,14 +82,20 @@
 
 
 .use-background{
-    background: var(--market-bg);
+    /* background: var(--market-bg); */
+    background: linear-gradient(180deg, rgba(29, 20, 40, 0) 0%, #1D1428 100%);
+    /* border-radius: 30px; */
+    /* transform: rotate(-180deg); */
 }
 
 .btn-calculator{
-    padding: 50% 15px;
+    padding: 15px;
     height: 100%;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
@@ -115,6 +121,32 @@
     background-size: 16px 16px, calc(100% - 32px) 3px, 16px 16px, 3px calc(100% - 32px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
+}
+
+.price-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.price-wrapper > .price-label{
+    width: 20%;
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.price-wrapper > .price-value{
+    width: 40%;
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
 }
 
 #section1{
@@ -144,7 +176,7 @@
 }
 
 #section2{
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .section2{
@@ -175,7 +207,7 @@
 }
 
 #section3{
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .section3{
@@ -204,7 +236,7 @@
 }
 
 #section4{
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 60px;
 }
 
@@ -313,6 +345,11 @@
         margin-bottom: 30px;
     }
 
+    .section3 > p{
+        padding: 0 15px;
+        margin-bottom: 40px;
+    }
+
     .section4-wrapper{
         display: block;
     }
@@ -322,7 +359,7 @@
     }
     
     .section4-wrapper > .section4-right{
-        width: 100%;
+        width: 100%;whatw
     }
 
     .mobile{

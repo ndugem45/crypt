@@ -218,7 +218,7 @@
                             <div class="label">
                                 You have
                             </div>
-                            <input type="email" class="input" placeholder="$"/>
+                            <input name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="$200,000" class="input"/>
                         </div>
                         <div class="currency">
                             <div class="label">
@@ -236,7 +236,7 @@
                             <div class="label">
                                 You Get
                             </div>
-                            <input type="email" class="input" placeholder="$"/>
+                            <input name="crypto-field" id="crypto-field" pattern="^\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="5.1006" class="input"/>
                         </div>
                         <div class="currency">
                             <div class="label">
@@ -256,6 +256,16 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="price-wrapper">
+                <div class="price-label">
+                    Price
+                </div>
+                <div class="price-value">
+                    1 BTC  = 35,000.00 USD
+                </div>
+            </div>
+
         </div>
     </div>
 

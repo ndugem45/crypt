@@ -279,7 +279,7 @@
     margin-bottom: 104px;
 }
 #section4 > .container{
-    background: linear-gradient(180deg, rgba(29, 20, 40, 0) 0%, #1D1428 100%);
+    background: var(--start-bg);
     border-radius: 30px;
     padding-top: 104px;
     padding-bottom: 88px;

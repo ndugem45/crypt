@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				
+
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="bext.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container">
+            <span class="wrapper-float">
+
+                <img class="nav-blur day" src="assets/floating/blur_nav_day1.svg"/>
+                <img class="nav-blur day" src="assets/floating/blur_nav_day2.svg"/>
+                <img id="nav-blur-day3" class="day" src="assets/floating/blur_nav_day3.svg"/>
+                
+                <img id="nav-blur" class="night" src="assets/floating/blur_nav.svg"/>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
+            </span>
+        </div>
+        <div class="container nav-wrapper above-grain">
+            
+
+            <a href="index.html">
+                <img class="invert" src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a class="btn-hover" href="index.html">
+                    Home
+                </a>
+                <a class="btn-hover" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="btn-hover" href="market.html">
+                    Markets
+                </a>
+                <a class="btn-hover" href="learn.html">
+                    Learn
+                </a>
+                <a class="btn-hover" href="">
+                    Forum
+                </a>
+                <a class="btn-hover" href="">
+                    Blog
+                </a>
+                <a class="btn-hover" href="contact.html">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div class="btn-hover">
+                    Download
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    English
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    USD
+                </div>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off invert" src="assets/Vector.svg"/>
+                    <img class="on invert" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img class="invert" src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <a class="plain" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="plain" href="market.html">
+                    Markets
+                </a>
+                <a class="plain" href="learn.html">
+                    Learn
+                </a>
+                <a class="plain" href="">
+                    Forum
+                </a>
+                <a class="plain" href="">
+                    Blog
+                </a>
+                <a class="plain" href="contact.html">
+                    Support
+                </a>
+
+                <a href="">
+                    Download
+                </a>
+                <a href="">
+                    English
+                </a>
+                <a href="">
+                    USD
+                </a>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section1">
+        <div class="container above-grain">
+            <h1>
+                BEXT Token
+            </h1>
+            <p>
+                BEXT is the main trading unit of the ByteDex ecosystem  which provides commission discounts and rewards. The BEXT token is available on Ethereum (ERC-20), TRON (TRC-20), BSC (BEP-20) networks to provide accessibility for trading on various blockchain networks.
+            </p>
+        </div>
+        <div class="container above-grain">
+            <img src="assets/bext-img1.png">
+            <div class="section1-wrapper">
+                <p>
+                    Expands the ecosystem and involves more features! At the moment interaction with BEXT includes:
+                </p>
+                <div class="section1-content">
+                    <div class="section1-content-wrapper">
+                        <div>
+                            <img class="invert" src="assets/bext-check.svg"/> Staking
+                        </div>
+                        <div>
+                            <img class="invert" src="assets/bext-check.svg"/> Fee discount
+                        </div>
+                    </div>
+                    
+                    <div class="section1-content-wrapper">
+                        <div>
+                            <img class="invert" src="assets/bext-check.svg"/> Earning sessions
+                        </div>
+                        <div>
+                            <img class="invert" src="assets/bext-check.svg"/> Trading on Byte Excgange
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="apply-btn">
+                Join the community
+            </button>
+        </div>
+    </div>
+
+
+    <div id="section2">
+        <div class="container above-grain">
+            <h1>
+                Ways to get BEXT on Byte Exchange?
+            </h1>
+            <p>
+                BEXT Token on trade at 4 global exchanges including Byte Exchange and major swap exchanges. You can purchase BEXT on Byte Exchange or you can get BEXT with major cryptocurrencies like BTC, ETH, USDT and BNB. BEXT Provides unique opportunities for BEXT hodlers specified below
+            </p>
+            <div class="section2-slider">
+                <div class="section2-itm">
+                    <h3>
+                        Fee Discounts
+                    </h3>
+                    <p>
+                        BEXT Provides fee discounts on Byte Exchange up to %300. More you hodl more you get discouts. Enjoy lowest fees in the market just hodling BEXT Tokens. 
+                    </p>
+                    <button class="byte-btn">
+                        Buy BEXT    
+                    </button>
+                </div>
+                <div class="section2-itm">
+                    <h3>
+                        BEXT Staking 
+                    </h3>
+                    <p>
+                        Byte Exchange disrtibutes up to %50 of net income of the exchange to BEXT Token Stakers. Select a staking program best fits to you and start earning immediately. Catch the opportunity earning with BEXT!
+                    </p>
+                    <button class="byte-btn">
+                        Buy BEXT    
+                    </button>
+                </div>
+                <div class="section2-itm">
+                    <h3>
+                        BEXT Hodlers
+                    </h3>
+                    <p>
+                        ByteDex offers a special reward program just holding your BEXT Tokens in your wallet. Bext Hodlers gain private access to selected pre-sales of new projects on Byte Exchange. 
+                    </p>
+                    <button class="byte-btn">
+                        Buy BEXT    
+                    </button>
+                </div>
+                <div class="section2-itm">
+                    <h3>
+                        Trade BEXT
+                    </h3>
+                    <p>
+                        ByteDex offers a special reward program just holding your BEXT Tokens in your wallet. Bext Hodlers gain private access to selected pre-sales of new projects on Byte Exchange. 
+                    </p>
+                    <button class="byte-btn">
+                        Buy BEXT    
+                    </button>
+                </div>
+            </div>
+            <div class="section2-btn-slider">
+                <img onclick="slideMe(false)" src="assets/arrow_leftN.svg"/>
+                <img onclick="slideMe(true)" src="assets/arrow_rightN.svg"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3">
+        <div class="container above-grain">
+            <h1>
+                Benefits of 
+                <br>
+                BEXT
+            </h1>
+            <p>
+                If you have BEXT on your wallet, it means a lot of exclusive products, privileges and earning opportunities. The Bytedex community implies a developed ecosystem of interactions, thanks to which BEXT holders receive
+            </p>
+        </div>
+        <div class="container above-grain">
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm1.svg"/>
+                    <span>
+                        Reduced Commission
+                    </span>
+                </div>
+                <p>
+                    Reduced trading fees
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm2.svg"/>
+                    <span>
+                        Discount
+                    </span>
+                </div>
+                <p>
+                    The participation in exclusive coin and token sales with up to 50% off
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm3.svg"/>
+                    <span>
+                        Payment with BEXT
+                    </span>
+                </div>
+                <p>
+                    The ability to pay a trading commission using BEXT
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm4.svg"/>
+                    <span>
+                        Exclusive
+                    </span>
+                </div>
+                <p>
+                    The exclusive coin and token drop
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm5.svg"/>
+                    <span>
+                        Bonuses
+                    </span>
+                </div>
+                <p>
+                    Elevated referral bonuses
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm6.svg"/>
+                    <span>
+                        Activities
+                    </span>
+                </div>
+                <p>
+                    The participation in exclusive activities organised by our exchange partners
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm7.svg"/>
+                    <span>
+                        Earning and Staking
+                    </span>
+                </div>
+                <p>
+                    Hold and earn up to 50% of Byte Exchange Income
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm8.svg"/>
+                    <span>
+                        Swap to Exchange
+                    </span>
+                </div>
+                <p>
+                    BEXT token on major swap exchanges
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm9.svg"/>
+                    <span>
+                        Trade Options
+                    </span>
+                </div>
+                <p>
+                    Trade Gem tokens only paired wİth BEXT
+                </p>
+            </div>
+            <div class="section3-itm">
+                <div>
+                    <img src="assets/bext-itm10.svg"/>
+                    <span>
+                        Pro Bytedex
+                    </span>
+                </div>
+                <p>
+                    Promote Byte Exchange, reach referral levels and earn BEXT. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section4">
+        <div class="container above-grain">
+            <h1>
+                How to Grow with Our Token
+            </h1>
+            <p>
+                We will offer still more privileges. We have developed the advanced ranking system which every community account can use to grow. You can choose the most profitable strategy:
+            </p>
+            <ul>
+                <li>
+                    To take an active part in trading and enjoy discounts on trading fees.
+                </li>
+                <li>
+                    To make money with referral and partnership programs.
+                </li>
+                <li>
+                    To take part in activities and use exclusive opportunities to unlock your bonuses.
+                </li>
+                <li>
+                    To earn more BEXT with staking.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="section5">
+        <div class="container above-grain">
+            <h1>
+                BEXT in the  future
+            </h1>
+            <div>
+                <div>
+                    <img src="assets/bext-section5-img1.svg" />
+                    <h2>
+                        Listed on Top 10
+                    </h2>
+                    <p>
+                        BEXT token will be listed on top 10 exchanges
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/bext-section5-img2.svg" />
+                    <h2>
+                        Super Charge
+                    </h2>
+                    <p>
+                        Burning activites will charge a BEXT boost on the market
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/bext-section5-img3.svg" />
+                    <h2>
+                        Expansion
+                    </h2>
+                    <p>
+                        BEXT will expand benefits in time  when byte expange modules launched
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section6">
+        <div class="container above-grain">
+            <div>
+                <h2>
+                    Our Community’s Future
+                </h2>
+                <p>
+                    One of the main idea behind the ByteDex project is being a community governanace on the whole eco-system.  We will create ByteDex communities in each country of the world. These communities elect their own leaders where they can be represented on ByteDex Company Board. %20 of net income generated from the countries will use as a community development budget to improve our communities. Be part of od community and get acquainted with thousands of crypto lovers!
+                </p>
+            </div>
+            <button class="byte-btn">
+                Join the Bytedex Community
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img class="invert" src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        function slideMe(p){
+            $('.section2-slider').slick( p ? 'slickNext' : 'slickPrev');
+        }
+        $(document).ready(function(){
+            $('.section2-slider').slick({
+                arrows: false,
+                dots: false,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                variableWidth: true,
+                responsive:[
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    },
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

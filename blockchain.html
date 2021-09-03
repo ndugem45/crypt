@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteDex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+				
+
+    <link rel="stylesheet" type="text/css" href="global.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="blockchain.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container">
+            <span class="wrapper-float">
+
+                <img class="nav-blur day" src="assets/floating/blur_nav_day1.svg"/>
+                <img class="nav-blur day" src="assets/floating/blur_nav_day2.svg"/>
+                <img id="nav-blur-day3" class="day" src="assets/floating/blur_nav_day3.svg"/>
+                
+                <img id="nav-blur" class="night" src="assets/floating/blur_nav.svg"/>
+                <img id="s-letter" class="night" src="assets/floating/S_letter.png"/>
+                <img id="s-letter" class="day" src="assets/floating/S_letter_day.png"/>
+                <img id="line-nav" class="invert" src="assets/floating/line_nav.png"/>
+            </span>
+        </div>
+        <div class="container nav-wrapper above-grain">
+            
+
+            <a href="index.html">
+                <img class="invert" src="assets/logo.svg">
+            </a>
+            <div class="menu-nav-wrapper">
+                <a class="btn-hover" href="index.html">
+                    Home
+                </a>
+                <a class="btn-hover" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="btn-hover" href="market.html">
+                    Markets
+                </a>
+                <a class="btn-hover" href="learn.html">
+                    Learn
+                </a>
+                <a class="btn-hover" href="">
+                    Forum
+                </a>
+                <a class="btn-hover" href="">
+                    Blog
+                </a>
+                <a class="btn-hover" href="contact.html">
+                    Support
+                </a>
+            </div>
+            <div class="right-nav-wrapper">
+                <div class="btn-hover">
+                    Download
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    English
+                </div>
+                <div onclick="toggleDropdown(this)" class="btn-dropdown">
+                    USD
+                </div>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+            <div class="right-mobile">
+                <button onclick="toggleMobileMenu(this)">
+                    <img class="off invert" src="assets/Vector.svg"/>
+                    <img class="on invert" src="assets/Vector_x.svg"/>
+                </button>
+                
+            </div>
+        </div>
+        <div class="dropdown-wrapper">
+            <div class="container">
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+                <a class="dropdown-item" href="">
+                    <img class="invert" src="assets/icon_menu.svg"/>
+                    <div>
+                        <span>lorem Ipsum</span>
+                        <span>
+                            Lorem ipsum dolor sit.
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="wrapper-mobile-menu">
+            <div>
+                <button onclick="togglePanel(this)">
+                    <span>Home</span> <img class="invert" src="assets/carret.svg"/>
+                </button>
+                <div class="panel">
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                    <a href=""><img src="assets/icon_menu.svg"/> lorem</a>
+                </div>
+                <a class="plain" href="exchange.html">
+                    Exchange
+                </a>
+                <a class="plain" href="market.html">
+                    Markets
+                </a>
+                <a class="plain" href="learn.html">
+                    Learn
+                </a>
+                <a class="plain" href="">
+                    Forum
+                </a>
+                <a class="plain" href="">
+                    Blog
+                </a>
+                <a class="plain" href="contact.html">
+                    Support
+                </a>
+
+                <a href="">
+                    Download
+                </a>
+                <a href="">
+                    English
+                </a>
+                <a href="">
+                    USD
+                </a>
+                <div>
+                    <img onclick="dayNight()" class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .blur-sec1{
+            left: -200px;
+            top: 200px;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(58.27deg);
+        }
+    </style>
+    <div id="sec1">
+        <div class="container">
+            <span class="wrapper-float">
+                <img class="blur-sec1 night" src="assets/floating/blur_hero2.svg">
+                <img class="blur-sec1 day" src="assets/floating/blur_nav_day3.svg">
+            </span>
+        </div>
+        <div class="container above-grain">
+            <h1 class="sec1-h">
+                Blockchain Vision
+            </h1>
+            <p class="sec1-p">
+                ByteDex Exchange offers you :
+            </p>
+            <div class="sec1-grid">
+
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico1.svg"/>
+                        <div>
+                            Bytedex Liquidity Solution
+                        </div>
+                    </div>
+                    <p>
+                        Never Miss Opportunties with 300+ Trading Pairs!
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico2.svg"/>
+                        <div>
+                            ByteDex Dapps
+                        </div>
+                    </div>
+                    <p>
+                        Develop Applications on the ByteDex Blockchain!
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico3.svg"/>
+                        <div>
+                            ByteDex Token Launcher
+                        </div>
+                    </div>
+                    <p>
+                        Create Tokens on the ByteDex Exchange. Develop your own project!
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico4.svg"/>
+                        <div>
+                            ByteDex Coin
+                        </div>
+                    </div>
+                    <p>
+                        ByteDex Coin Holders Benenfit from Special Commision Rates and Share the revenue of the ByteDex Exchange by staking.
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico5.svg"/>
+                        <div>
+                            OTC Platform
+                        </div>
+                    </div>
+                    <p>
+                        Meet Secure Crypto Trading with ByteDex! Trading Freedom between Buyer and Seller with ByteDex Assurance!
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico6.svg"/>
+                        <div>
+                            ByteDex Brokers
+                        </div>
+                    </div>
+                    <p>
+                        If You Are a Good Trader, trade with your Costumer Limits From Our Specials Panel. Keep You and Your Costumer Safe!
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico7.svg"/>
+                        <div>
+                            ByteDex Wallet (ByteW)
+                        </div>
+                    </div>
+                    <p>
+                        With ByteDex’s Decentralized Wallet. Your Crypto Asset Are Always safe! Open a windows to Blockchain with ByteW
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico8.svg"/>
+                        <div>
+                            Payments and Fiat Money
+                        </div>
+                    </div>
+                    <p>
+                        Trade Crypto Assets from All Over the World with Both your Credit Cards and Debit Cards on the ByteDex Exchange!
+                    </p>
+                </div>
+                <div class="sec1-grid-itm">
+                    <div class="sec1-grid-itm-top">
+                        <img src="assets/blockchain-ico9.svg"/>
+                        <div>
+                            Number of Trading Pairs
+                        </div>
+                    </div>
+                    <p>
+                        ByteDex will be the Exchange with the Highest Number of Trading Pairs. 120+ at Opening and 300+ Pairs in First Year will be put into the process. Also so on in very near future!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <style>
+        .blur-sec2{
+            right: -400px;
+            top: 500px;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(58.27deg);
+        }
+        .blur-sec2-2{
+            left: -450px;
+            top: 0px;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(58.27deg);
+        }
+    </style>
+    <div id="sec2">
+        <div class="container">
+            <span class="wrapper-float">
+                <img class="blur-sec2-2 night" src="assets/floating/blur_hero2.svg">
+                <img class="blur-sec2-2 day" src="assets/floating/blur_nav_day3.svg">
+
+                <img class="blur-sec2 night" src="assets/floating/blur_hero2.svg">
+                <img class="blur-sec2 day" src="assets/floating/blur_nav_day3.svg">
+            </span>
+        </div>
+        <div class="container above-grain">
+            <div class="sec2-top">
+                <div class="sec2-top-left">
+                    <h1>
+                        RoadMaps
+                    </h1>
+                    <p>
+                        This timeline details our funding and development goals.
+                    </p>
+                </div>
+                <div class="sec2-top-right">
+                    <img onmousedown="slideMe(false)" class="sec2-btn-left invert" src="assets/arrow_left.svg"/>
+                    <img onmousedown="slideMe(true)" class="sec2-btn-right invert" src="assets/arrow_right.svg"/>
+                </div>
+            </div>
+        </div>
+        <style>
+            .sec2-slide{
+                overflow-y: hidden;
+                overflow-x: auto;
+                white-space: nowrap;
+                width: 100%;
+                padding: 0 135px;
+                scroll-behavior: smooth;
+            }
+            
+            .sec2-slide::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+            .sec2-slide::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+            .sec2-slide::-webkit-scrollbar-thumb {
+                background-color: darkgrey;
+                outline: 0px solid slategrey;
+            }
+
+            .roadmap-wrap{
+                height:350px;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                padding-right: 100px;
+                margin-left: 100px;
+            }
+            .roadmap-line{
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                z-index: 1;
+                background-color: #303843;
+                left: -55px;
+            }
+            .roadmap-itm{
+                text-align: center;
+                font-family: 'Sora';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 180%;
+                width: 242px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-left: -55px;
+            }
+            .roadmap-itm.btm{
+                flex-direction: column;
+            }
+            .roadmap-itm.top{
+                flex-direction: column-reverse;
+            }
+            .roadmap-circle{
+                width: 16px;
+                height: 16px;
+                background-color: white;
+                border-radius: 50%;
+            }
+            .roadmap-itm.top > .roadmap-circle{
+                margin-top: 23px;
+            }
+            .roadmap-itm.btm > .roadmap-circle{
+                margin-bottom: 32px;
+            }
+            .roadmap-itm > h3{
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 100%;
+                margin: unset;
+            }
+            .roadmap-itm.top > h3{
+                margin-top: 16px;
+            }
+            .roadmap-itm.btm > h3{
+                margin-bottom: 16px;
+            }
+        </style>
+        <div class="sec2-slide above-grain">
+            <div class="roadmap-wrap">
+                <div class="roadmap-line"></div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+                <div class="roadmap-itm btm">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        August 2020
+                    </h3>
+                    <div>
+                        Preparation of Exchange Architecture
+                    </div>
+                </div>
+                <div class="roadmap-itm top">
+                    <div class="roadmap-circle invert"></div>
+                    <h3>
+                        October 2020
+                    </h3>
+                    <div>
+                        ByteDex Protoype Design
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sec3">
+        <div class="container above-grain">
+            <div class="sec3-grid">
+                <div class="sec3-grid-itm">
+                    <h2>
+                        Token Distributor
+                    </h2>
+                    <p>
+                        Tokens will be distributed to yout ByteDex User Account immediatly. User can Withdraw to Tron Based Wallets as well.
+                    </p>
+                    <div class="sec3-grid-chart">
+                        <img src="assets/donut1.svg"/>
+                    </div>
+                    <div class="sec3-grid-list-wrap">
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #00C1CF;"></div>
+                            <div>
+                                Community
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #5AA1E3;"></div>
+                            <div>
+                                Reserve
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #50485B;"></div>
+                            <div>
+                                Reward & Bounty
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #75D69C;"></div>
+                            <div>
+                                Team
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #B97EBB;"></div>
+                            <div>
+                                Marketing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec3-grid-itm">
+                    <h2>
+                        SoftCap Allocation
+                    </h2>
+                    <p>
+                        In Case Softcap can not be achieved ByteDex Technologies OÜ will cover rest.
+                    </p>
+                    <div class="sec3-grid-chart">
+                        <img src="assets/donut2.svg"/>
+                    </div>
+                    <div class="sec3-grid-list-wrap">
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #FE6C61;"></div>
+                            <div>
+                                Software Development
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #F79468;"></div>
+                            <div>
+                                Marketing Promotion
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #EEBA6D;"></div>
+                            <div>
+                                Reward & Bounty
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #CEC2AB;"></div>
+                            <div>
+                                Operations
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #50485B;"></div>
+                            <div>
+                                Legal
+                            </div>
+                        </div>
+                        <div class="sec3-grid-list">
+                            <div class="sec3-grid-list-poin" style="background-color: #75D69C;"></div>
+                            <div>
+                                Management
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <p class="sec3-p">
+                Team tokens are locked for the first 6 Month and will be bested over a period of 12 months total. Tokens reservec to advisiors will be locked for 6 month minimum. 
+            </p>
+        </div>
+    </div>
+
+    
+
+    <style>
+        .q-letter{
+            right: -150px;
+            top: 510px;
+            position: absolute;
+            z-index: -1;
+        }
+        .b-letter{
+            left: -193px;
+            top: -304px;
+            position: absolute;
+            z-index: -1;
+        }
+        .blur-sec4{
+            left: -700px;
+            top: 90px;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(58.27deg);
+        }
+    </style>
+    <div id="sec4">
+        <div class="container">
+            <span class="wrapper-float">
+                <img class="q-letter night" src="assets/floating/Q_letter.png"/>
+                <img class="q-letter day" src="assets/floating/Q_letter_day.png"/>
+
+                <img class="b-letter night" src="assets/floating/B_letter.png"/>
+                <img class="b-letter day" src="assets/floating/B_letter_day.png"/>
+
+                <img class="blur-sec4 night" src="assets/floating/blur_buy.svg">
+                <img class="blur-sec4 day" src="assets/floating/blur_market_day.svg">
+            </span>
+        </div>
+        <div class="container above-grain">
+             <div class="sec4-box">
+                <h1>
+                    ByteDex Structure
+                </h1>
+                <div class="sec4-content">
+                    <div class="sec4-itm">
+                        <div>
+                            1 ByteDex :
+                        </div>
+                        <div>
+                            0.03 USDT
+                        </div>
+                    </div>
+                    <div class="sec4-itm">
+                        <div>
+                            Terms of Sale
+                        </div>
+                        <div>
+                            Citizen of iran, China , North Korea, Syiria, Libya, can not participate in the ICO, US citizens must be accredited Investor According to Sec Rules.
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+    <style>
+        .w-letter{
+            left: -80px;
+            top: 675px;
+            position: absolute;
+            z-index: -1;
+        }
+        .blur-sec5{
+            left: -100px;
+            top: 300px;
+            position: absolute;
+            z-index: -1;
+            transform: rotate(58.27deg);
+        }
+    </style>
+    <div id="sec5">
+        <div class="container">
+            <span class="wrapper-float">
+                <img class="w-letter night" src="assets/floating/W_letter.png"/>
+                <img class="w-letter day" src="assets/floating/W_letter_day.png"/>
+
+                <img class="blur-sec5 night" src="assets/floating/blur_buy.svg">
+                <img class="blur-sec5 day" src="assets/floating/blur_market_day.svg">
+            </span>
+        </div>
+        <div class="container above-grain">
+            <h1 class="sec5-h">
+                ByteDex Communities
+            </h1>
+            <p class="sec5-p">
+                Join ByteDex Community on Telegram!
+            </p>
+        </div>
+        <img class="container" src="assets/big-map.svg"/>
+    </div>
+
+
+
+
+
+
+
+    <div id="sec6">
+        <div class="container above-grain">
+            <h1 class="sec6-h">
+                ByteDex Team
+            </h1>
+            <p class="sec6-p">
+                Let us introduce you to the team that will make it all happen.
+            </p>
+            <div class="sec6-grid">
+                <div class="sec6-itm">
+                    <img src="assets/user1.png" />
+                    <h3>
+                        İsmail Köseoğlu
+                    </h3>
+                    <div>
+                        Founder & CEO
+                    </div>
+                    <button onclick="popUp()" class="invert">
+                        Info
+                    </button>
+                </div>
+                <div class="sec6-itm">
+                    <img src="" />
+                    <h3>
+                        Ugur Özkan
+                    </h3>
+                    <div>
+                        CTO
+                    </div>
+                    <button onclick="popUp()" class="invert">
+                        Info
+                    </button>
+                </div>
+                <div class="sec6-itm">
+                    <img src="" />
+                    <h3>
+                        Mehmet Köseoglu
+                    </h3>
+                    <div>
+                        Founder & CFO
+                    </div>
+                    <button onclick="popUp()" class="invert">
+                        Info
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .blur-sec7{
+            right: -600px;
+            top: -500px;
+            position: absolute;
+            z-index: -1;
+            width: 1000px;
+            transform: rotate(58.27deg);
+        }
+    </style>
+    <div id="sec7">
+        <div class="container">
+            <span class="wrapper-float">
+                <img class="blur-sec7 night" src="assets/floating/blur_buy.svg">
+                <img class="blur-sec7 day" src="assets/floating/blur_market_day.svg">
+            </span>
+        </div>
+        <div class="container above-grain">
+            <h1 class="sec7-h">
+                Download White Paper
+            </h1>
+            <button class="byte-btn sec7-btn">
+                Download
+            </button>
+        </div>
+    </div>
+
+
+
+    <style>
+        
+    </style>
+    <div id="popup" onclick="popUp(true)">
+        <div class="popup-box">
+            <img src="assets/user1.png"/>
+            <h3>
+                İsmail Köseoğlu
+            </h3>
+            <span>
+                Bio In Here
+            </span>
+            <p class="popup-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur non dui pellentesque consectetur lectus 
+                in pretium. Id lectus viverra quam non amet.
+            </p>
+            <div class="popup-education">
+                Education Here
+            </div>
+            <div class="popup-social">
+                <a>
+                    <img src="assets/facebook.svg"/>
+                </a>
+                <a>
+                    <img src="assets/twitter.svg"/>
+                </a>
+                <a>
+                    <img src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="top-footer">
+        <div class="container above-grain">
+            <div class="left-footer">
+                <h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+            </div>
+            <div class="mid-footer">
+                <div>
+                    <label>
+                        Markets
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+                <div>
+                    <label>
+                        Learn
+                    </label>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                    <a href="">
+                        Loremipsum
+                    </a>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div>
+                    Download
+                </div>
+                <div>
+                    English
+                </div>
+                <div>
+                    USD
+                </div>
+                <div>
+                    <img class="invert" src="assets/darkmode_icon.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="btm-footer">
+        <div class="container above-grain">
+            <img class="night" src="assets/logo.svg"/>
+            <img class="day" src="assets/logo_day.svg"/>
+            <div class="detail-footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+            </div>
+            <div class="wrapper-social">
+                <a href="">
+                    <img class="invert" src="assets/facebook.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/twitter.svg"/>
+                </a>
+                <a href="">
+                    <img class="invert" src="assets/linkedin.svg"/>
+                </a>
+            </div>
+        </div>
+        <div class="detail-footer-m">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non elementum tincidunt interdum euismod magna.
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nav.js"></script>
+    <script>
+        function popUp(rr = false){
+            var p = $('#popup')
+            var b = $('.popup-box')
+            if(p.css('display') == 'none' && rr == false){
+                p.css('display', 'flex')
+                setTimeout(()=>{
+                    b.addClass('active')
+                },200)
+            }else{
+                p.css('display', 'none')
+                b.removeClass('active')
+            }
+        }
+
+        function slideMe(p){
+            var s = $(".sec2-slide")
+
+            function isEnd(){
+                var $elem=s;
+                var newScrollLeft = $elem.scrollLeft(),
+                width=$elem.outerWidth(),
+                scrollWidth=$elem.get(0).scrollWidth;
+
+                if (scrollWidth-newScrollLeft==width) {
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+
+            if(p && !isEnd()){
+                s.scrollLeft(s.scrollLeft()+200)
+            }else if(!p && s.scrollLeft() > 0){
+                s.scrollLeft(s.scrollLeft()-200)
+            }
+        }
+
+        $(document).ready(()=>{
+            $('.roadmap-itm').each((s)=>{
+                var e = $('.roadmap-itm')[s]
+                if( $(e).hasClass('top') ){
+                    $(e).css('transform', `translateY(-${($(e).outerHeight()/2)-8}px)` )
+                }else{
+                    $(e).css('transform', `translateY(${($(e).outerHeight()/2)-8}px)` )
+                }
+            })
+        })
+        
+    </script>
+</body>
+</html>

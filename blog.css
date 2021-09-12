@@ -1,0 +1,212 @@
+/* section 1 */
+#sec1{
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+.sec1-h{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    margin: unset;
+    margin-bottom: 37px;
+}
+.sec1-p{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin: unset;
+    text-align: center;
+}
+.sec1-headline{
+    margin-top: 92px;
+}
+.sec1-headline-title{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 32px;
+}
+.sec1-headline-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.sec1-headline-wrapper > img{
+    width:50%;
+    height: 417px;
+    max-width: 570px;
+    object-fit: cover;
+    background: #EBEBEB;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.sec1-headline-right{
+    flex:1;
+    margin-left: 40px;
+}
+.sec1-headline-date{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+}
+.sec1-headline-h{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.sec1-headline-p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+}
+.sec1-headline-p > a{
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+    background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+/* end section 1  */
+
+
+
+/* section 2 */
+#sec2{
+    margin-bottom: 104px;
+}
+.sec2-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 104px;
+}
+.sec2-itm > img{
+    width:100%;
+    max-width: 370px;
+    height: 229px;
+    background: #EBEBEB;
+    border-radius: 30px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.sec2-itm-date{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    margin-top: 32px;
+}
+.sec2-itm-h{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-top: 16px;
+}
+.sec2-itm-p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    margin-top: 18px;
+}
+.sec2-itm > a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    margin-top: 24px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sec2-itm > a:hover{
+    background: linear-gradient(217.56deg, #5ABEDF -14.58%, #DDA85B 82.02%);
+    background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.sec2-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 104px;
+}
+.sec2-nav > img{
+    margin: 0 14px;
+    cursor: pointer;
+}
+/* end section 2 */
+
+
+
+
+
+@media all and (min-width: 1280px){
+    
+}
+@media all and (min-width: 1440px){
+
+}
+
+
+
+
+@media all and (max-width: 1140px){
+}
+@media all and (max-width: 1000px){
+}
+@media all and (max-width: 994px){
+}
+@media all and (max-width: 768px){
+    .sec1-headline-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec1-headline-wrapper > img{
+        width: 100%;
+        margin-bottom: 40px;
+        max-width: 100%;
+        height: 229px;
+    }
+    .sec1-headline-right{
+        margin-left: unset;
+    }
+    .sec2-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec2-itm > img{
+        max-width: 100%;
+    }
+}
+@media all and (max-width: 568px){
+}
+
+@media all and (max-width: 430px){
+    .sec2-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media all and (max-width: 320px){
+    
+}
